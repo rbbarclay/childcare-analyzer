@@ -27,8 +27,13 @@ st.set_page_config(
 
 @st.cache_data
 def load_county_capacity():
-    """Load county capacity data with gap calculations"""
-    df = pd.read_csv('data/processed/county_capacity.csv')
+    """Load county capacity data with gap calculations and equity metrics"""
+    # Try to load equity-enhanced data first, fall back to basic data
+    try:
+        df = pd.read_csv('data/processed/county_capacity_with_equity.csv')
+    except FileNotFoundError:
+        df = pd.read_csv('data/processed/county_capacity.csv')
+
     # Ensure county_fips is string with leading zeros (5 digits) to match GeoJSON
     df['county_fips'] = df['county_fips'].astype(str).str.zfill(5)
     return df
@@ -201,6 +206,29 @@ def main():
             help="Filter by current gap severity"
         )
 
+        # Equity filters (if equity data is available)
+        if 'median_income' in county_data.columns:
+            st.sidebar.markdown("**Equity Filters:**")
+
+            equity_filter = st.sidebar.multiselect(
+                "Equity Concern",
+                options=["High Concern", "Moderate Concern", "Low Concern", "Minimal Concern"],
+                default=[],
+                help="Filter by income and poverty levels"
+            )
+
+            low_income_only = st.sidebar.checkbox(
+                "Low-income counties only (<$60k)",
+                value=False,
+                help="Show only counties with median income under $60,000"
+            )
+
+            high_poverty_only = st.sidebar.checkbox(
+                "High child poverty only (>15%)",
+                value=False,
+                help="Show only counties with child poverty rate above 15%"
+            )
+
         # Apply filters to display data
         if year == 2025:
             # For 2025, merge with growth data to enable filtering
@@ -218,6 +246,15 @@ def main():
             # For 2029, apply severity filter only
             if severity_filter:
                 filtered_data = filtered_data[filtered_data['severity'].isin(severity_filter)]
+
+        # Apply equity filters (if equity data available)
+        if 'median_income' in county_data.columns:
+            if equity_filter:
+                filtered_data = filtered_data[filtered_data['equity_concern'].isin(equity_filter)]
+            if low_income_only:
+                filtered_data = filtered_data[filtered_data['low_income'] == True]
+            if high_poverty_only:
+                filtered_data = filtered_data[filtered_data['high_poverty'] == True]
 
     # Display summary statistics
     display_summary_stats(filtered_data, age_group, year)
@@ -806,7 +843,44 @@ def render_county_detail(county_name, county_data, age_group, year, participatio
             st.metric("Gap", f"{data_0_5['gap']:,}", delta=f"{data_0_5['gap_pct']*100:.1f}%", delta_color="inverse")
             st.metric("Severity", data_0_5['severity'])
 
+    # Display equity metrics (if available)
+    if data_0_5 is not None and 'median_income' in data_0_5.index and pd.notna(data_0_5['median_income']):
+        st.markdown("---")
+        st.subheader("💰 Equity Indicators")
+
+        eq_col1, eq_col2, eq_col3 = st.columns(3)
+
+        with eq_col1:
+            st.metric(
+                "Median Household Income",
+                f"${data_0_5['median_income']:,.0f}",
+                help="County median household income (Census ACS 2022)"
+            )
+
+        with eq_col2:
+            poverty_rate = data_0_5['child_poverty_rate'] if 'child_poverty_rate' in data_0_5.index else 0
+            st.metric(
+                "Child Poverty Rate",
+                f"{poverty_rate:.1f}%",
+                help="% of children ages 0-5 below poverty line"
+            )
+
+        with eq_col3:
+            equity_concern = data_0_5['equity_concern'] if 'equity_concern' in data_0_5.index else "Unknown"
+            st.metric(
+                "Equity Concern Level",
+                equity_concern,
+                help="Based on income and poverty indicators"
+            )
+
+        # Contextual insight
+        if data_0_5['median_income'] < 50000:
+            st.info("💡 **Low-income county**: Families may struggle to afford care even if slots are available. Consider subsidies and CCAP outreach.")
+        elif data_0_5['median_income'] > 100000:
+            st.info("💡 **High-income county**: Families can likely afford care. Gap may be due to market failure or zoning. Consider incentives for providers.")
+
     # Load and display providers
+    st.markdown("---")
     st.subheader("📋 Licensed Childcare Facilities")
 
     providers = load_providers()
