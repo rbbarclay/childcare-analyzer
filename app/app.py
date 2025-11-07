@@ -177,8 +177,56 @@ def main():
 
     filtered_data = recalculate_metrics(filtered_data, participation_rates, severity_thresholds)
 
+    # Calculate growth metrics (for trend analysis)
+    growth_data = calculate_growth_metrics(county_data, age_group, participation_rates, severity_thresholds)
+
+    # Priority Filtering Options
+    st.sidebar.markdown("---")
+    st.sidebar.header("🎯 Priority Filters")
+
+    show_all = st.sidebar.checkbox("Show all counties", value=True)
+
+    if not show_all:
+        growth_filter = st.sidebar.multiselect(
+            "Growth Trend",
+            options=["Accelerating", "Growing", "Stable", "Improving"],
+            default=["Accelerating", "Growing"],
+            help="Filter by gap growth rate compared to state average"
+        )
+
+        severity_filter = st.sidebar.multiselect(
+            "Severity Level",
+            options=["Critical", "Significant", "Moderate", "Low", "Adequate"],
+            default=["Critical", "Significant"],
+            help="Filter by current gap severity"
+        )
+
+        # Apply filters to display data
+        if year == 2025:
+            # For 2025, merge with growth data to enable filtering
+            filtered_data = filtered_data.merge(
+                growth_data[['county_name', 'growth_category']],
+                on='county_name',
+                how='left'
+            )
+
+            if growth_filter:
+                filtered_data = filtered_data[filtered_data['growth_category'].isin(growth_filter)]
+            if severity_filter:
+                filtered_data = filtered_data[filtered_data['severity'].isin(severity_filter)]
+        else:
+            # For 2029, apply severity filter only
+            if severity_filter:
+                filtered_data = filtered_data[filtered_data['severity'].isin(severity_filter)]
+
     # Display summary statistics
     display_summary_stats(filtered_data, age_group, year)
+
+    # Display growth trend summary
+    if year == 2025:
+        state_growth = growth_data['state_avg_growth_rate'].iloc[0] if len(growth_data) > 0 else 0
+        st.info(f"📊 **Trend Analysis (2025→2029)**: State average gap growth rate: {state_growth:.1%} | Use Priority Filters to focus on accelerating counties")
+
 
     # Main content: Map and Table side by side
     col1, col2 = st.columns([3, 2])
@@ -189,7 +237,11 @@ def main():
 
     with col2:
         st.subheader("Top Counties by Gap")
-        render_county_table(filtered_data, age_group, year)
+        # Pass growth data for 2025 view
+        if year == 2025:
+            render_county_table(filtered_data, age_group, year, growth_data)
+        else:
+            render_county_table(filtered_data, age_group, year)
 
     # County Detail View
     if selected_county != "None":
@@ -426,6 +478,73 @@ def recalculate_metrics(data, participation_rates, severity_thresholds):
     return df
 
 
+def calculate_growth_metrics(county_data, age_group, participation_rates, severity_thresholds):
+    """
+    Calculate growth rates between 2025 and 2029 for trend analysis
+
+    Args:
+        county_data: Complete dataset with both years
+        age_group: Selected age group
+        participation_rates: Custom participation rates
+        severity_thresholds: Custom severity thresholds
+
+    Returns:
+        DataFrame with growth metrics added
+    """
+    # Get data for both years
+    data_2025 = county_data[
+        (county_data['age_group'] == age_group) &
+        (county_data['year'] == 2025)
+    ].copy()
+
+    data_2029 = county_data[
+        (county_data['age_group'] == age_group) &
+        (county_data['year'] == 2029)
+    ].copy()
+
+    # Recalculate metrics for both years
+    data_2025 = recalculate_metrics(data_2025, participation_rates, severity_thresholds)
+    data_2029 = recalculate_metrics(data_2029, participation_rates, severity_thresholds)
+
+    # Merge to calculate growth
+    merged = data_2025.merge(
+        data_2029[['county_name', 'gap', 'gap_pct']],
+        on='county_name',
+        suffixes=('_2025', '_2029'),
+        how='left'
+    )
+
+    # Calculate growth metrics
+    merged['gap_change'] = merged['gap_2029'] - merged['gap_2025']
+    merged['gap_growth_rate'] = merged.apply(
+        lambda row: (row['gap_change'] / row['gap_2025']) if row['gap_2025'] > 0 else 0,
+        axis=1
+    )
+
+    # State average growth rate (for comparison)
+    state_avg_growth = merged['gap_change'].sum() / merged['gap_2025'].sum()
+
+    # Classify growth
+    def classify_growth(growth_rate):
+        if growth_rate < -0.05:  # Improving by >5%
+            return "Improving", "↓", "#66bb6a"
+        elif growth_rate < state_avg_growth * 0.5:  # Below half state avg
+            return "Stable", "→", "#9ccc65"
+        elif growth_rate < state_avg_growth * 2.0:  # Within 2x state avg
+            return "Growing", "↗", "#fbc02d"
+        else:  # More than 2x state average
+            return "Accelerating", "⬆", "#d32f2f"
+
+    merged[['growth_category', 'growth_icon', 'growth_color']] = merged['gap_growth_rate'].apply(
+        lambda x: pd.Series(classify_growth(x))
+    )
+
+    # Add state average for reference
+    merged['state_avg_growth_rate'] = state_avg_growth
+
+    return merged
+
+
 # ============================================================================
 # COMPONENT FUNCTIONS
 # ============================================================================
@@ -533,38 +652,90 @@ def render_choropleth_map(data, geojson, age_group, year):
         """)
 
 
-def render_county_table(data, age_group, year):
+def render_county_table(data, age_group, year, growth_data=None):
     """Render sortable table of top counties by gap"""
 
     # Sort by gap (descending) and take top 20
     top_counties = data.nlargest(20, 'gap').copy()
 
-    # Format for display
-    display_df = top_counties[[
-        'county_name',
-        'population',
-        'need_estimate',
-        'licensed_capacity',
-        'gap',
-        'gap_pct',
-        'severity'
-    ]].copy()
+    # Merge with growth data if available (for 2025 view)
+    if growth_data is not None and year == 2025:
+        top_counties = top_counties.merge(
+            growth_data[['county_name', 'gap_growth_rate', 'growth_category', 'growth_icon']],
+            on='county_name',
+            how='left'
+        )
 
-    display_df['population'] = display_df['population'].apply(lambda x: f"{x:,}")
-    display_df['need_estimate'] = display_df['need_estimate'].apply(lambda x: f"{x:,}")
-    display_df['licensed_capacity'] = display_df['licensed_capacity'].apply(lambda x: f"{x:,}")
-    display_df['gap'] = display_df['gap'].apply(lambda x: f"{x:,}")
-    display_df['gap_pct'] = display_df['gap_pct'].apply(lambda x: f"{x*100:.1f}%")
+        # Format for display with growth
+        display_df = top_counties[[
+            'county_name',
+            'gap',
+            'gap_pct',
+            'gap_growth_rate',
+            'growth_icon',
+            'need_estimate',
+            'licensed_capacity',
+            'severity'
+        ]].copy()
 
-    display_df.columns = [
-        'County',
-        'Population',
-        'Need',
-        'Capacity',
-        'Gap',
-        'Gap %',
-        'Severity'
-    ]
+        display_df['gap'] = display_df['gap'].apply(lambda x: f"{x:,}")
+        display_df['gap_pct'] = display_df['gap_pct'].apply(lambda x: f"{x*100:.1f}%")
+        display_df['gap_growth_rate'] = display_df['gap_growth_rate'].apply(lambda x: f"{x*100:+.1f}%")
+        display_df['need_estimate'] = display_df['need_estimate'].apply(lambda x: f"{x:,}")
+        display_df['licensed_capacity'] = display_df['licensed_capacity'].apply(lambda x: f"{x:,}")
+
+        # Create trend column combining icon and growth rate
+        display_df['Trend'] = display_df['growth_icon'] + " " + display_df['gap_growth_rate']
+        display_df = display_df.drop(columns=['growth_icon', 'gap_growth_rate'])
+
+        display_df.columns = [
+            'County',
+            'Gap',
+            'Gap %',
+            'Need',
+            'Capacity',
+            'Severity',
+            'Trend 2025→29'
+        ]
+
+        # Reorder columns
+        display_df = display_df[[
+            'County',
+            'Gap',
+            'Gap %',
+            'Trend 2025→29',
+            'Need',
+            'Capacity',
+            'Severity'
+        ]]
+
+    else:
+        # Format for display without growth
+        display_df = top_counties[[
+            'county_name',
+            'population',
+            'need_estimate',
+            'licensed_capacity',
+            'gap',
+            'gap_pct',
+            'severity'
+        ]].copy()
+
+        display_df['population'] = display_df['population'].apply(lambda x: f"{x:,}")
+        display_df['need_estimate'] = display_df['need_estimate'].apply(lambda x: f"{x:,}")
+        display_df['licensed_capacity'] = display_df['licensed_capacity'].apply(lambda x: f"{x:,}")
+        display_df['gap'] = display_df['gap'].apply(lambda x: f"{x:,}")
+        display_df['gap_pct'] = display_df['gap_pct'].apply(lambda x: f"{x*100:.1f}%")
+
+        display_df.columns = [
+            'County',
+            'Population',
+            'Need',
+            'Capacity',
+            'Gap',
+            'Gap %',
+            'Severity'
+        ]
 
     # Display table
     st.dataframe(
