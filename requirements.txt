@@ -1,0 +1,39 @@
+# Colorado Early Childhood Capacity Analyzer
+# Python Dependencies
+
+# Core Framework
+streamlit>=1.28.0
+
+# Data Processing
+pandas>=2.0.0
+numpy>=1.24.0
+
+# Visualization
+plotly>=5.17.0
+
+# Geospatial (optional but recommended)
+geopandas>=0.14.0
+shapely>=2.0.0
+
+# Data Export
+openpyxl>=3.1.0  # For Excel export if needed
+
+# HTTP Requests (for data fetching)
+requests>=2.31.0
+
+# Date/Time utilities
+python-dateutil>=2.8.2
+
+# For Census API access (if using API)
+census>=0.8.19  # Optional: for Census API calls
+
+# Testing (optional for prototype)
+pytest>=7.4.0
+pytest-cov>=4.1.0
+
+# Code Quality (optional)
+black>=23.0.0
+flake8>=6.1.0
+
+# Additional utilities
+tqdm>=4.66.0  # Progress bars for data processing
