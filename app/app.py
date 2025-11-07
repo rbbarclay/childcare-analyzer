@@ -79,6 +79,72 @@ def main():
     # Sidebar filters
     st.sidebar.header("📊 Filters")
 
+    # Usage Instructions (collapsible)
+    with st.sidebar.expander("📖 How to Use This Tool", expanded=False):
+        st.markdown("""
+        ### Quick Start
+
+        **Basic View:**
+        1. Select **Age Group** (0-5, 0-2, or 3-5)
+        2. Choose **Time Period** (2025 current or 2029 forecast)
+        3. View the **color-coded map** showing gap severity
+        4. See **top counties** ranked by gap size
+
+        ### Finding Priority Areas
+
+        **Show Only High-Priority Counties:**
+        1. Uncheck **"Show all counties"**
+        2. Select filters:
+           - **Growth Trend**: Choose "Accelerating" or "Growing"
+           - **Severity**: Choose "Critical" or "Significant"
+           - **Equity**: Filter by income/poverty levels
+        3. View focused results
+
+        ### Understanding the Metrics
+
+        **Gap %** = (Gap ÷ Need) × 100
+        - **Need** = Population × Participation Rate
+        - **Gap** = Need - Licensed Capacity
+        - Shows % of children lacking access to care
+
+        **Growth Indicators:**
+        - ⬆ **Accelerating**: Gap growing >2× state average
+        - ↗ **Growing**: Gap growing faster than average
+        - → **Stable**: Gap growing near state average
+        - ↓ **Improving**: Gap decreasing
+
+        **Severity Levels:**
+        - 🔴 **Critical** (>30%): Severe shortage
+        - 🟠 **Significant** (20-30%): Major shortage
+        - 🟡 **Moderate** (10-20%): Noticeable gap
+        - 🟢 **Low** (5-10%): Minor gap
+        - ✅ **Adequate** (<5%): Good match
+
+        ### County Details
+
+        1. Select a county from dropdown
+        2. View breakdown by age group
+        3. See **equity indicators** (income, poverty)
+        4. Browse **facility list** with addresses
+        5. Download county-specific data
+
+        ### Adjusting Model Assumptions
+
+        Use **Model Configuration** to test scenarios:
+        - **Participation Rates**: Adjust % needing care
+        - **Severity Thresholds**: Change what counts as "Critical"
+
+        ### Exporting Data
+
+        - Click **"Download Full Data (CSV)"** for rankings
+        - Select a county and download facility list
+        - Use for presentations, reports, planning
+
+        ---
+
+        💡 **Tip**: Start with "Show all counties" ON to see the full picture, then use filters to identify priority areas.
+        """)
+
     # Age group filter
     age_group = st.sidebar.radio(
         "Age Group",
