@@ -93,6 +93,56 @@ def main():
     # Extract year from selection
     year = 2025 if "Current" in time_period else 2029
 
+    # Model Configuration
+    st.sidebar.markdown("---")
+    st.sidebar.header("⚙️ Model Configuration")
+
+    with st.sidebar.expander("📐 Participation Rates", expanded=False):
+        st.markdown("*Adjust the estimated % of children needing formal childcare*")
+
+        participation_0_2 = st.slider(
+            "Ages 0-2 Participation Rate",
+            min_value=0.30, max_value=0.90, value=0.60, step=0.05,
+            help="Default: 60% based on working parent rates"
+        )
+
+        participation_3_5 = st.slider(
+            "Ages 3-5 Participation Rate",
+            min_value=0.30, max_value=0.90, value=0.70, step=0.05,
+            help="Default: 70% based on pre-K participation trends"
+        )
+
+        st.info(f"📊 **Current Settings:**\n- Ages 0-2: {participation_0_2:.0%}\n- Ages 3-5: {participation_3_5:.0%}\n- Ages 0-5: {(participation_0_2 + participation_3_5)/2:.0%} (avg)")
+
+    with st.sidebar.expander("🎯 Severity Thresholds", expanded=False):
+        st.markdown("*Adjust gap % thresholds for severity classification*")
+
+        critical_threshold = st.slider(
+            "Critical Threshold",
+            min_value=0.15, max_value=0.50, value=0.30, step=0.05,
+            help="Gap % above this is 'Critical'"
+        ) * 100
+
+        significant_threshold = st.slider(
+            "Significant Threshold",
+            min_value=0.10, max_value=0.40, value=0.20, step=0.05,
+            help="Gap % above this is 'Significant'"
+        ) * 100
+
+        moderate_threshold = st.slider(
+            "Moderate Threshold",
+            min_value=0.05, max_value=0.30, value=0.10, step=0.05,
+            help="Gap % above this is 'Moderate'"
+        ) * 100
+
+        low_threshold = st.slider(
+            "Low Threshold",
+            min_value=0.01, max_value=0.20, value=0.05, step=0.01,
+            help="Gap % above this is 'Low'"
+        ) * 100
+
+        st.info(f"📊 **Thresholds:**\n- Critical: >{critical_threshold:.0f}%\n- Significant: >{significant_threshold:.0f}%\n- Moderate: >{moderate_threshold:.0f}%\n- Low: >{low_threshold:.0f}%")
+
     # County selector for detail view
     st.sidebar.markdown("---")
     st.sidebar.header("🔍 County Detail View")
@@ -111,6 +161,22 @@ def main():
         (county_data['year'] == year)
     ].copy()
 
+    # Recalculate metrics based on custom participation rates
+    participation_rates = {
+        '0-2': participation_0_2,
+        '3-5': participation_3_5,
+        '0-5': (participation_0_2 + participation_3_5) / 2
+    }
+
+    severity_thresholds = {
+        'critical': critical_threshold / 100,
+        'significant': significant_threshold / 100,
+        'moderate': moderate_threshold / 100,
+        'low': low_threshold / 100
+    }
+
+    filtered_data = recalculate_metrics(filtered_data, participation_rates, severity_thresholds)
+
     # Display summary statistics
     display_summary_stats(filtered_data, age_group, year)
 
@@ -128,7 +194,150 @@ def main():
     # County Detail View
     if selected_county != "None":
         st.markdown("---")
-        render_county_detail(selected_county, county_data, age_group, year)
+        # Also recalculate for all years/age groups for the selected county
+        county_detail_data = county_data[county_data['county_name'] == selected_county].copy()
+        county_detail_data = recalculate_metrics(county_detail_data, participation_rates, severity_thresholds)
+        render_county_detail(selected_county, county_detail_data, age_group, year, participation_rates)
+
+    # Methodology Documentation
+    st.markdown("---")
+    with st.expander("📘 Methodology & Data Sources", expanded=False):
+        st.markdown("""
+        ## Data Sources
+
+        ### Licensed Childcare Facilities
+        - **Source**: Colorado Open Data Portal
+        - **Dataset**: Colorado Licensed Child Care Facilities Report
+        - **Date**: October 2025
+        - **Records**: 4,604 licensed facilities
+        - **Link**: [data.colorado.gov](https://data.colorado.gov/Early-childhood/Colorado-Licensed-Child-Care-Facilities-Report/a9rr-k8mu)
+
+        ### Population Data
+        - **Source**: U.S. Census Bureau
+        - **Dataset**: American Community Survey (ACS) 5-Year Estimates (2022)
+        - **Variables**: B01001_003E (Male Under 5), B01001_027E (Female Under 5)
+        - **Total**: 380,627 children ages 0-5 in Colorado
+        - **Geographic Level**: County
+
+        ### Population Forecasts
+        - **Method**: 0.5% annual growth projection from 2025 to 2029
+        - **Assumption**: Conservative estimate based on Colorado demographic trends
+        - **Note**: Capacity is assumed constant at 2025 levels for forecast scenarios
+
+        ### Geographic Boundaries
+        - **Source**: Plotly Public Datasets (derived from U.S. Census TIGER/Line)
+        - **Coverage**: All 64 Colorado counties
+        - **Format**: GeoJSON with FIPS codes
+
+        ---
+
+        ## Calculation Methodology
+
+        ### Capacity by Age Group
+        Licensed capacity is aggregated from facility-level data:
+
+        - **Ages 0-2**: Infant (0-12 months) + Toddler (13-35 months) + 40% of home-based capacity
+        - **Ages 3-5**: Preschool (3-5 years) + 60% of home-based capacity
+        - **Ages 0-5**: Sum of ages 0-2 and 3-5
+
+        **Rationale**: Home-based facilities don't report age-specific capacity, so we apply industry-standard splits based on typical enrollment patterns.
+
+        ### Need Estimation
+
+        **Formula**: `Need = Population × Participation Rate`
+
+        **Default Participation Rates** (configurable in sidebar):
+        - **Ages 0-2**: 60%
+        - **Ages 3-5**: 70%
+        - **Ages 0-5**: 65% (weighted average)
+
+        **Rationale for Defaults**:
+        - **Ages 0-2 (60%)**: Based on labor force participation of mothers with young children (~70% nationally, 2024), adjusted downward to account for informal care arrangements
+        - **Ages 3-5 (70%)**: Aligns with Colorado Universal Preschool enrollment goals and observed participation (64.5% of 4-year-olds enrolled as of Oct 2024)
+
+        **Important**: These are *estimates* for prototype purposes. Actual participation varies by:
+        - Family income and employment status
+        - Availability of informal care (relatives, neighbors)
+        - Cultural preferences
+        - Geographic accessibility
+
+        ### Gap Calculation
+
+        **Formula**: `Gap = Need - Licensed Capacity`
+
+        - **Positive Gap**: Shortage (more children need care than slots available)
+        - **Negative Gap**: Oversupply (more slots than estimated need)
+
+        **Gap %**: `Gap ÷ Need × 100`
+
+        This represents the percentage of children who need care but lack access to licensed slots.
+
+        ### Severity Classification
+
+        Counties are classified based on **Gap %** (configurable in sidebar):
+
+        | Severity | Default Threshold | Color | Meaning |
+        |----------|-------------------|-------|---------|
+        | **Critical** | >30% | Red | Severe shortage - roughly 1 in 3 children lack access |
+        | **Significant** | 20-30% | Orange | Major shortage requiring immediate attention |
+        | **Moderate** | 10-20% | Yellow | Noticeable gap but manageable |
+        | **Low** | 5-10% | Light Green | Minor gap, may be frictional/geographic |
+        | **Adequate** | <5% | Green | Reasonable match between need and supply |
+
+        ---
+
+        ## Limitations & Assumptions
+
+        ### Data Limitations
+        1. **Snapshot in Time**: October 2025 facility data may not reflect recent openings/closures
+        2. **Licensed Capacity Only**: Does not include license-exempt care (relatives, neighbors, nannies)
+        3. **Actual Enrollment vs Capacity**: Licensed capacity ≠ current enrollment
+        4. **Quality Variations**: All licensed slots treated equally regardless of quality ratings
+        5. **Geographic Access**: County-level analysis doesn't capture within-county accessibility issues
+
+        ### Key Assumptions
+        1. **Participation Rates**: Default 60%/70% are estimates, not Colorado-specific validated rates
+        2. **Constant Capacity**: 2029 forecasts assume no new facility openings/closures
+        3. **Uniform Distribution**: Population and capacity assumed evenly distributed within counties
+        4. **Age Splits for Home Care**: 40/60 split is industry approximation, not facility-specific
+        5. **Need = Demand**: Participation rates proxy for actual demand; doesn't account for affordability barriers
+
+        ### Recommended Validation
+        To improve accuracy, we recommend validating with:
+        - Colorado Department of Early Childhood (CDEC) enrollment data
+        - Colorado Children's Campaign KIDS COUNT reports
+        - County-level surveys of working parents
+        - Waitlist data from childcare providers
+        - Quality ratings (Colorado Shines) to weight capacity
+
+        ---
+
+        ## Model Configuration
+
+        This tool allows you to adjust key assumptions:
+
+        **Participation Rates**: Modify to reflect different scenarios:
+        - Conservative: Lower rates (e.g., 50% for 0-2)
+        - Progressive: Higher rates matching labor force participation
+        - Research-based: Use Colorado-specific survey data if available
+
+        **Severity Thresholds**: Adjust based on policy priorities:
+        - Stricter: Lower thresholds to identify more counties as critical
+        - Lenient: Higher thresholds for targeted interventions
+
+        ---
+
+        ## For More Information
+
+        - **Colorado Department of Early Childhood**: [cdec.colorado.gov](https://cdec.colorado.gov)
+        - **Colorado Children's Campaign**: [coloradokids.org](https://www.coloradokids.org)
+        - **Early Milestones Colorado**: [earlymilestones.org](https://www.earlymilestones.org)
+        - **Census Data**: [data.census.gov](https://data.census.gov)
+
+        ---
+
+        *Last Updated: 2025-11-07 | Version: 1.1 (Configurable Model)*
+        """)
 
     # Footer with data sources
     st.sidebar.markdown("---")
@@ -141,23 +350,76 @@ def main():
 
     st.sidebar.markdown("---")
     st.sidebar.markdown("### ℹ️ How Gap % Works")
-    st.sidebar.markdown("""
+    st.sidebar.markdown(f"""
     **Calculation:**
     - **Need** = Population × Participation Rate
-      - Ages 0-2: 60% participation
-      - Ages 3-5: 70% participation
+      - Ages 0-2: {participation_0_2:.0%} (configurable)
+      - Ages 3-5: {participation_3_5:.0%} (configurable)
     - **Gap** = Need - Licensed Capacity
     - **Gap %** = Gap ÷ Need
 
     **Example:** Adams County (Ages 0-2)
     - Population: 20,460
-    - Need: 20,460 × 60% = 12,276
+    - Need: 20,460 × {participation_0_2:.0%} = {int(20460 * participation_0_2):,}
     - Capacity: 2,792
-    - Gap: 12,276 - 2,792 = 9,484
-    - Gap %: 9,484 ÷ 12,276 = **77.3%**
+    - Gap: {int(20460 * participation_0_2):,} - 2,792 = {int(20460 * participation_0_2) - 2792:,}
+    - Gap %: {(int(20460 * participation_0_2) - 2792) / int(20460 * participation_0_2):.1%}
 
-    *This means 77% of children who need care lack access.*
+    *Adjust participation rates above to see how estimates change.*
     """)
+
+
+# ============================================================================
+# HELPER FUNCTIONS
+# ============================================================================
+
+def recalculate_metrics(data, participation_rates, severity_thresholds):
+    """
+    Recalculate need, gap, gap_pct, and severity based on custom parameters
+
+    Args:
+        data: DataFrame with population and licensed_capacity
+        participation_rates: dict with keys '0-2', '3-5', '0-5'
+        severity_thresholds: dict with keys 'critical', 'significant', 'moderate', 'low'
+
+    Returns:
+        DataFrame with recalculated metrics
+    """
+    df = data.copy()
+
+    # Recalculate need_estimate based on custom participation rates
+    df['need_estimate'] = df.apply(
+        lambda row: int(row['population'] * participation_rates.get(row['age_group'], 0.65)),
+        axis=1
+    )
+
+    # Recalculate gap
+    df['gap'] = df['need_estimate'] - df['licensed_capacity']
+
+    # Recalculate gap_pct
+    df['gap_pct'] = df.apply(
+        lambda row: row['gap'] / row['need_estimate'] if row['need_estimate'] > 0 else 0,
+        axis=1
+    )
+
+    # Reclassify severity based on custom thresholds
+    def classify_severity_custom(gap_pct):
+        if gap_pct > severity_thresholds['critical']:
+            return "Critical", "#d32f2f"
+        elif gap_pct > severity_thresholds['significant']:
+            return "Significant", "#f57c00"
+        elif gap_pct > severity_thresholds['moderate']:
+            return "Moderate", "#fbc02d"
+        elif gap_pct > severity_thresholds['low']:
+            return "Low", "#9ccc65"
+        else:
+            return "Adequate", "#66bb6a"
+
+    df[['severity', 'color_code']] = df['gap_pct'].apply(
+        lambda x: pd.Series(classify_severity_custom(x))
+    )
+
+    return df
 
 
 # ============================================================================
@@ -319,7 +581,7 @@ def render_county_table(data, age_group, year):
     )
 
 
-def render_county_detail(county_name, county_data, age_group, year):
+def render_county_detail(county_name, county_data, age_group, year, participation_rates):
     """Render detailed view for a selected county"""
 
     st.header(f"📍 {county_name} County - Detailed View")
@@ -346,7 +608,7 @@ def render_county_detail(county_name, county_data, age_group, year):
         st.subheader("Ages 0-2")
         if data_0_2 is not None:
             st.metric("Population", f"{data_0_2['population']:,}")
-            st.metric("Need (60% rate)", f"{data_0_2['need_estimate']:,}")
+            st.metric(f"Need ({participation_rates['0-2']:.0%} rate)", f"{data_0_2['need_estimate']:,}")
             st.metric("Capacity", f"{data_0_2['licensed_capacity']:,}")
             st.metric("Gap", f"{data_0_2['gap']:,}", delta=f"{data_0_2['gap_pct']*100:.1f}%", delta_color="inverse")
             st.metric("Severity", data_0_2['severity'])
@@ -355,7 +617,7 @@ def render_county_detail(county_name, county_data, age_group, year):
         st.subheader("Ages 3-5")
         if data_3_5 is not None:
             st.metric("Population", f"{data_3_5['population']:,}")
-            st.metric("Need (70% rate)", f"{data_3_5['need_estimate']:,}")
+            st.metric(f"Need ({participation_rates['3-5']:.0%} rate)", f"{data_3_5['need_estimate']:,}")
             st.metric("Capacity", f"{data_3_5['licensed_capacity']:,}")
             st.metric("Gap", f"{data_3_5['gap']:,}", delta=f"{data_3_5['gap_pct']*100:.1f}%", delta_color="inverse")
             st.metric("Severity", data_3_5['severity'])
@@ -364,7 +626,7 @@ def render_county_detail(county_name, county_data, age_group, year):
         st.subheader("Ages 0-5 (Total)")
         if data_0_5 is not None:
             st.metric("Population", f"{data_0_5['population']:,}")
-            st.metric("Need (65% rate)", f"{data_0_5['need_estimate']:,}")
+            st.metric(f"Need ({participation_rates['0-5']:.0%} rate)", f"{data_0_5['need_estimate']:,}")
             st.metric("Capacity", f"{data_0_5['licensed_capacity']:,}")
             st.metric("Gap", f"{data_0_5['gap']:,}", delta=f"{data_0_5['gap_pct']*100:.1f}%", delta_color="inverse")
             st.metric("Severity", data_0_5['severity'])
