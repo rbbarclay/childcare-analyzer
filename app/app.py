@@ -29,6 +29,8 @@ st.set_page_config(
 def load_county_capacity():
     """Load county capacity data with gap calculations"""
     df = pd.read_csv('data/processed/county_capacity.csv')
+    # Ensure county_fips is string with leading zeros (5 digits) to match GeoJSON
+    df['county_fips'] = df['county_fips'].astype(str).str.zfill(5)
     return df
 
 
@@ -198,6 +200,7 @@ def render_choropleth_map(data, geojson, age_group, year):
     fig = px.choropleth(
         data,
         geojson=geojson,
+        featureidkey="id",  # Match GeoJSON "id" field with locations column
         locations='county_fips',
         color='severity',
         color_discrete_map=color_discrete_map,
