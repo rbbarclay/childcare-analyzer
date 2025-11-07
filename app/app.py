@@ -844,11 +844,11 @@ def render_county_detail(county_name, county_data, age_group, year, participatio
     # Prepare display columns
     display_providers = county_providers[[
         'PROVIDER NAME',
-        'FACILITY TYPE',
+        'PROVIDER SERVICE TYPE',
         'TOTAL LICENSED CAPACITY',
-        'FACILITY ADDRESS 1',
+        'STREET ADDRESS',
         'CITY',
-        'ZIP CODE'
+        'ZIP'
     ]].copy()
 
     display_providers.columns = [
