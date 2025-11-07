@@ -15,7 +15,10 @@ def fetch_childcare_facilities(output_path='data/raw/childcare_facilities.csv'):
     """
     Fetch childcare facilities data from Colorado Open Data Portal
 
-    The dataset should include:
+    Dataset: CO Licensed Child Care Report
+    Source: https://data.colorado.gov/Early-Childhood/Licensed-Child-Care-Facilities/a9rr-k8mu
+
+    The dataset includes:
     - Facility name, address, county
     - License type/status
     - Licensed capacity by age group
@@ -27,50 +30,37 @@ def fetch_childcare_facilities(output_path='data/raw/childcare_facilities.csv'):
         DataFrame: Raw childcare facilities data
     """
     print("Fetching childcare facilities from Colorado Open Data Portal...")
+    print("Dataset: CO Licensed Child Care Report (October 2025)")
 
-    # Colorado Open Data Portal - Socrata API endpoint
-    # NOTE: We need to find the actual dataset ID on data.colorado.gov
-    # Common Socrata API pattern: https://data.colorado.gov/resource/{dataset_id}.json
+    # Direct CSV download URL from Colorado Open Data Portal
+    # Dataset ID: a9rr-k8mu
+    csv_url = "https://data.colorado.gov/api/views/a9rr-k8mu/files/263751a2-8e29-4133-b7f1-89469633975f?download=true&filename=COLicensedChildCareReportForUpload%202025-10.csv"
 
-    # This is a placeholder - we'll need to identify the correct dataset
-    # Searching for: "child care" or "childcare" on data.colorado.gov
+    try:
+        # Download the CSV
+        df = fetch_via_csv_url(csv_url, output_path)
+        return df
 
-    # Option 1: Use Socrata API (if we have dataset ID)
-    # base_url = "https://data.colorado.gov/resource/XXXX-XXXX.json"
+    except Exception as e:
+        print(f"\n✗ Error fetching childcare data: {e}")
+        print("\nTrying alternative Socrata API endpoint...")
 
-    # Option 2: Direct CSV download (if available)
-    # Some datasets have direct CSV export URLs
+        # Fallback: Try Socrata API
+        try:
+            df = fetch_via_socrata_api("a9rr-k8mu", limit=20000)
 
-    # For now, let's try to search for the dataset
-    print("""
-    ⚠️  MANUAL STEP REQUIRED:
+            # Save if successful
+            os.makedirs(os.path.dirname(output_path), exist_ok=True)
+            df.to_csv(output_path, index=False)
+            print(f"✓ Saved to {output_path}")
 
-    To fetch childcare facilities data, please:
+            return df
 
-    1. Visit: https://data.colorado.gov
-    2. Search for: "child care facilities" or "licensed childcare"
-    3. Look for dataset with facility-level capacity data
-    4. Find either:
-       - Socrata API endpoint (resource ID)
-       - Direct CSV download URL
-
-    Common dataset names to look for:
-    - "Child Care Facility and Licensed Capacity"
-    - "Licensed Child Care Facilities"
-    - "Early Childhood Facilities"
-
-    Once identified, update this script with the correct endpoint.
-    """)
-
-    # Example structure for when we have the URL:
-    # url = "https://data.colorado.gov/resource/XXXX-XXXX.csv"
-    # params = {
-    #     '$limit': 10000,  # Increase limit to get all records
-    #     '$order': 'county'
-    # }
-
-    # For demonstration, let's create a function that will work once we have the URL
-    return None
+        except Exception as e2:
+            print(f"✗ Socrata API also failed: {e2}")
+            print("\nPlease check if dataset is still available at:")
+            print("https://data.colorado.gov/Early-Childhood/Licensed-Child-Care-Facilities/a9rr-k8mu")
+            raise
 
 
 def fetch_via_socrata_api(dataset_id, limit=10000):
