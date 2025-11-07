@@ -37,10 +37,20 @@ ENV/
 .DS_Store
 Thumbs.db
 
-# Data files
+# Data files - ignore by default, but allow essential files for Streamlit deployment
 *.csv
 *.xlsx
 data/
+
+# Allow essential data files for Streamlit Cloud
+!data/processed/
+!data/processed/*.csv
+!data/geo/
+!data/geo/*.geojson
+!data/raw/
+!data/raw/childcare_facilities.csv
+
+# Still ignore these
 uploads/
 
 # Environment variables
