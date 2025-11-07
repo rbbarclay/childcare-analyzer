@@ -317,9 +317,15 @@ if __name__ == "__main__":
     supply_df = pd.read_csv('data/processed/county_capacity_supply.csv')
     print(f"  Supply: {len(supply_df)} counties")
 
-    # Load demand data
-    demand_df = pd.read_csv('data/raw/colorado_population.csv')
-    print(f"  Demand: {len(demand_df)} counties")
+    # Load demand data (prefer Census data if available)
+    if os.path.exists('data/raw/census_population.csv'):
+        demand_df = pd.read_csv('data/raw/census_population.csv')
+        data_source = "Census ACS 2022"
+        print(f"  Demand: {len(demand_df)} counties (Census ACS 2022)")
+    else:
+        demand_df = pd.read_csv('data/raw/colorado_population.csv')
+        data_source = "Estimates 2023"
+        print(f"  Demand: {len(demand_df)} counties (Estimates)")
 
     # Merge
     merged_df = merge_supply_demand(supply_df, demand_df)
