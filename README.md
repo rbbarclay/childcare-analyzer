@@ -51,25 +51,43 @@ This tool combines:
 
 - Python 3.8 or higher
 - pip (Python package manager)
+- Census API key (free from https://api.census.gov/data/key_signup.html)
 
 ### Installation
 
 ```bash
 # Clone the repository
 git clone [repository-url]
-cd co-childcare-analyzer
+cd childcare-analyzer
+
+# Create virtual environment
+python -m venv venv
+source venv/bin/activate  # Windows: venv\Scripts\activate
 
 # Install dependencies
 pip install -r requirements.txt
 
-# Run the data pipeline (generates sample data for prototype)
-python data_pipeline/run_pipeline.py
+# Set Census API key
+export CENSUS_API_KEY='your_key_here'
 
-# Launch the Streamlit app
+# Run the data pipeline to fetch real data
+python data_pipeline/run_data_pipeline.py
+
+# Launch the Streamlit app (when UI is built)
 streamlit run app/app.py
 ```
 
 The app will open in your browser at `http://localhost:8501`
+
+### Data Setup
+
+**Current Status:**
+- ✅ **GeoJSON**: Colorado county boundaries automatically downloaded
+- ⚠️ **Census API**: Requires free API key (get at https://api.census.gov/data/key_signup.html)
+- 🔍 **Childcare Data**: Manual research needed on data.colorado.gov
+- ⚠️ **Forecasts**: Optional (has simple projection fallback)
+
+See `data_pipeline/DATA_SOURCES_RESEARCH.md` for detailed data setup instructions.
 
 ---
 
@@ -216,29 +234,31 @@ See `docs/DATA_SCHEMA.md` for complete technical details.
 
 ---
 
-## Development Roadmap
+## Development Status
 
-### ✅ Phase 1: Core Functionality (Weeks 1-2)
-- Data pipeline with sample data
-- Basic Streamlit UI
-- Map visualization
-- County rankings
-- Filtering (age group, time period)
+### ✅ Phase 1: Data Infrastructure (IN PROGRESS)
+- [x] Project structure created
+- [x] GeoJSON fetcher working (64 Colorado counties)
+- [x] Census API fetcher ready (requires API key)
+- [x] Forecast fetcher ready (with fallback)
+- [ ] Identify Colorado childcare dataset on data.colorado.gov
+- [ ] Data cleaning and processing pipeline
+- [ ] Gap calculation engine
+- [ ] Generate county_capacity.csv
 
-### 🔄 Phase 2: Enhanced Features (Weeks 3-4)
-- County detail views
-- Provider lists
-- Demographic breakdowns
-- Data export (CSV)
-- About/methodology page
+### 📋 Phase 2: Streamlit UI (NEXT)
+- [ ] Basic app layout with filters
+- [ ] Interactive choropleth map
+- [ ] County rankings table
+- [ ] County detail views
+- [ ] CSV export functionality
 
-### 📋 Phase 3: Production-Ready (Future)
-- Real-time data integration
-- Automated data refresh
-- User authentication
-- Advanced forecasting (scenarios)
-- Sub-county analysis (zip codes)
-- Drive-time accessibility modeling
+### 📋 Phase 3: Polish & Deploy (FUTURE)
+- [ ] About page with methodology
+- [ ] Data quality validation
+- [ ] Testing and bug fixes
+- [ ] Deploy to Streamlit Cloud
+- [ ] User documentation
 
 ---
 
