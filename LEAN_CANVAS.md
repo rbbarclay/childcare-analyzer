@@ -114,28 +114,6 @@
 ### Prototype Phase
 **N/A** - No revenue model for initial proof-of-concept
 
-### Future Revenue Models (Post-Validation)
-
-**Government Contract** (Most Likely)
-- Annual maintenance contract with Colorado Dept of Early Childhood
-- Estimated: $50K-150K/year for full production system
-- Includes: data updates, new features, user support
-
-**Grant Funding**
-- Foundation grants for tool enhancement (equity features, special needs analysis)
-- Federal grants (e.g., Preschool Development Grant Birth through Five)
-- Estimated: $100K-300K for major enhancements
-
-**Licensing to Other States**
-- SaaS model: $30K-75K/state/year
-- Customization for each state's data sources
-- Potential: 10-20 states over 3 years
-
-**Not Pursuing** (At This Time)
-- Freemium model (wrong customer segment)
-- Advertising (inappropriate for government use)
-- Individual user subscriptions (not B2C product)
-
 ---
 
 ## Cost Structure
@@ -144,21 +122,21 @@
 **Fixed Costs:**
 - Development time: 60-80 hours @ $0 (internal/volunteer) or $6K-12K (contractor)
 - Hosting: $0-50/month (Streamlit Cloud free tier or basic hosting)
-- Domain name: $15/year (optional)
+- 
 
 **Total Prototype Cost**: $0-$500 (assuming internal development)
 
 ### Production System (Future)
 **Fixed Costs:**
-- Ongoing development: $100K-200K/year (1-2 developers)
-- Infrastructure: $500-2,000/month (cloud hosting, database)
-- Data subscriptions: $5K-20K/year (if premium sources needed)
-- Design/UX: $20K-40K (one-time)
+- Ongoing development: 
+- Infrastructure: 
+- Data subscriptions: 
+- Design/UX: 
 
 **Variable Costs:**
-- User support: Scales with adoption ($30K-60K/year)
-- Data refresh/quality assurance: $20K-40K/year
-- New feature development: $40K-100K/year
+- User support: Scales with adoption 
+- Data refresh/quality assurance: 
+- New feature development: 
 
 ---
 
