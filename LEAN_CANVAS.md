@@ -50,8 +50,6 @@
 ### Single, Clear Message
 **See exactly where Colorado's childcare gaps are—now and in the future—so resources go where they're needed most.**
 
-### High-Level Concept
-"Moneyball for childcare capacity planning"
 
 ### Why This Matters
 - Transforms fragmented data into actionable intelligence
