@@ -140,12 +140,23 @@ def main():
     """)
 
     st.sidebar.markdown("---")
-    st.sidebar.markdown("### ℹ️ About")
+    st.sidebar.markdown("### ℹ️ How Gap % Works")
     st.sidebar.markdown("""
-    This tool calculates childcare capacity gaps by comparing:
-    - **Need**: Population × participation rate (60% for 0-2, 70% for 3-5)
-    - **Supply**: Licensed capacity from facilities
-    - **Gap**: Need - Supply
+    **Calculation:**
+    - **Need** = Population × Participation Rate
+      - Ages 0-2: 60% participation
+      - Ages 3-5: 70% participation
+    - **Gap** = Need - Licensed Capacity
+    - **Gap %** = Gap ÷ Need
+
+    **Example:** Adams County (Ages 0-2)
+    - Population: 20,460
+    - Need: 20,460 × 60% = 12,276
+    - Capacity: 2,792
+    - Gap: 12,276 - 2,792 = 9,484
+    - Gap %: 9,484 ÷ 12,276 = **77.3%**
+
+    *This means 77% of children who need care lack access.*
     """)
 
 
@@ -265,24 +276,27 @@ def render_county_table(data, age_group, year):
     # Format for display
     display_df = top_counties[[
         'county_name',
+        'population',
+        'need_estimate',
+        'licensed_capacity',
         'gap',
         'gap_pct',
-        'population',
-        'licensed_capacity',
         'severity'
     ]].copy()
 
-    display_df['gap_pct'] = display_df['gap_pct'].apply(lambda x: f"{x*100:.1f}%")
-    display_df['gap'] = display_df['gap'].apply(lambda x: f"{x:,}")
     display_df['population'] = display_df['population'].apply(lambda x: f"{x:,}")
+    display_df['need_estimate'] = display_df['need_estimate'].apply(lambda x: f"{x:,}")
     display_df['licensed_capacity'] = display_df['licensed_capacity'].apply(lambda x: f"{x:,}")
+    display_df['gap'] = display_df['gap'].apply(lambda x: f"{x:,}")
+    display_df['gap_pct'] = display_df['gap_pct'].apply(lambda x: f"{x*100:.1f}%")
 
     display_df.columns = [
         'County',
+        'Population',
+        'Need',
+        'Capacity',
         'Gap',
         'Gap %',
-        'Population',
-        'Capacity',
         'Severity'
     ]
 
@@ -332,6 +346,7 @@ def render_county_detail(county_name, county_data, age_group, year):
         st.subheader("Ages 0-2")
         if data_0_2 is not None:
             st.metric("Population", f"{data_0_2['population']:,}")
+            st.metric("Need (60% rate)", f"{data_0_2['need_estimate']:,}")
             st.metric("Capacity", f"{data_0_2['licensed_capacity']:,}")
             st.metric("Gap", f"{data_0_2['gap']:,}", delta=f"{data_0_2['gap_pct']*100:.1f}%", delta_color="inverse")
             st.metric("Severity", data_0_2['severity'])
@@ -340,6 +355,7 @@ def render_county_detail(county_name, county_data, age_group, year):
         st.subheader("Ages 3-5")
         if data_3_5 is not None:
             st.metric("Population", f"{data_3_5['population']:,}")
+            st.metric("Need (70% rate)", f"{data_3_5['need_estimate']:,}")
             st.metric("Capacity", f"{data_3_5['licensed_capacity']:,}")
             st.metric("Gap", f"{data_3_5['gap']:,}", delta=f"{data_3_5['gap_pct']*100:.1f}%", delta_color="inverse")
             st.metric("Severity", data_3_5['severity'])
@@ -348,6 +364,7 @@ def render_county_detail(county_name, county_data, age_group, year):
         st.subheader("Ages 0-5 (Total)")
         if data_0_5 is not None:
             st.metric("Population", f"{data_0_5['population']:,}")
+            st.metric("Need (65% rate)", f"{data_0_5['need_estimate']:,}")
             st.metric("Capacity", f"{data_0_5['licensed_capacity']:,}")
             st.metric("Gap", f"{data_0_5['gap']:,}", delta=f"{data_0_5['gap_pct']*100:.1f}%", delta_color="inverse")
             st.metric("Severity", data_0_5['severity'])
