@@ -2,384 +2,384 @@ county_fips,county_name,year,age_group,population,licensed_capacity,participatio
 8001,Adams,2025,0-2,20460,2792,0.6,12276,9484,0.7725643532095146,Critical,#d32f2f,355,CO Open Data + CO Demography Office,2025-11-07
 8001,Adams,2025,0-5,40920,6512,0.65,26598,20086,0.7551695616211745,Critical,#d32f2f,355,CO Open Data + CO Demography Office,2025-11-07
 8001,Adams,2025,3-5,20460,3720,0.7,14322,10602,0.7402597402597403,Critical,#d32f2f,355,CO Open Data + CO Demography Office,2025-11-07
-8001,Adams,2029,0-2,21187,2792,0.6,12712,9920,0.7803650094398993,Critical,#d32f2f,355,CO Open Data + CO Demography Office,2025-11-07
-8001,Adams,2029,0-5,42374,6512,0.65,27543,21031,0.7635696910285735,Critical,#d32f2f,355,CO Open Data + CO Demography Office,2025-11-07
-8001,Adams,2029,3-5,21187,3720,0.7,14831,11111,0.7491740273750928,Critical,#d32f2f,355,CO Open Data + CO Demography Office,2025-11-07
+8001,Adams,2029,0-2,23051,2792,0.6,13831,11039,0.7981346251174897,Critical,#d32f2f,355,CO Open Data + CO Demography Office,2025-11-07
+8001,Adams,2029,0-5,44970,6512,0.65,29230,22718,0.7772151898734178,Critical,#d32f2f,355,CO Open Data + CO Demography Office,2025-11-07
+8001,Adams,2029,3-5,21919,3720,0.7,15343,11623,0.7575441569445349,Critical,#d32f2f,355,CO Open Data + CO Demography Office,2025-11-07
 8003,Alamosa,2025,0-2,580,153,0.6,348,195,0.5603448275862069,Critical,#d32f2f,14,CO Open Data + CO Demography Office,2025-11-07
 8003,Alamosa,2025,0-5,1160,187,0.65,754,567,0.7519893899204244,Critical,#d32f2f,14,CO Open Data + CO Demography Office,2025-11-07
 8003,Alamosa,2025,3-5,580,34,0.7,406,372,0.916256157635468,Critical,#d32f2f,14,CO Open Data + CO Demography Office,2025-11-07
-8003,Alamosa,2029,0-2,601,153,0.6,361,208,0.5761772853185596,Critical,#d32f2f,14,CO Open Data + CO Demography Office,2025-11-07
-8003,Alamosa,2029,0-5,1202,187,0.65,781,594,0.7605633802816901,Critical,#d32f2f,14,CO Open Data + CO Demography Office,2025-11-07
-8003,Alamosa,2029,3-5,601,34,0.7,421,387,0.9192399049881235,Critical,#d32f2f,14,CO Open Data + CO Demography Office,2025-11-07
+8003,Alamosa,2029,0-2,541,153,0.6,325,172,0.5292307692307693,Critical,#d32f2f,14,CO Open Data + CO Demography Office,2025-11-07
+8003,Alamosa,2029,0-5,1096,187,0.65,712,525,0.7373595505617978,Critical,#d32f2f,14,CO Open Data + CO Demography Office,2025-11-07
+8003,Alamosa,2029,3-5,555,34,0.7,388,354,0.9123711340206185,Critical,#d32f2f,14,CO Open Data + CO Demography Office,2025-11-07
 8005,Arapahoe,2025,0-2,22925,4541,0.6,13755,9214,0.6698655034532898,Critical,#d32f2f,494,CO Open Data + CO Demography Office,2025-11-07
 8005,Arapahoe,2025,0-5,45851,12899,0.65,29803,16904,0.5671912223601651,Critical,#d32f2f,494,CO Open Data + CO Demography Office,2025-11-07
 8005,Arapahoe,2025,3-5,22926,8358,0.7,16048,7690,0.47918743768693917,Critical,#d32f2f,494,CO Open Data + CO Demography Office,2025-11-07
-8005,Arapahoe,2029,0-2,23740,4541,0.6,14244,9703,0.681199101376018,Critical,#d32f2f,494,CO Open Data + CO Demography Office,2025-11-07
-8005,Arapahoe,2029,0-5,47481,12899,0.65,30863,17964,0.5820561837799306,Critical,#d32f2f,494,CO Open Data + CO Demography Office,2025-11-07
-8005,Arapahoe,2029,3-5,23741,8358,0.7,16619,8261,0.4970816535290932,Critical,#d32f2f,494,CO Open Data + CO Demography Office,2025-11-07
+8005,Arapahoe,2029,0-2,22652,4541,0.6,13591,9050,0.6658818335663307,Critical,#d32f2f,494,CO Open Data + CO Demography Office,2025-11-07
+8005,Arapahoe,2029,0-5,45344,12899,0.65,29474,16575,0.5623600461423628,Critical,#d32f2f,494,CO Open Data + CO Demography Office,2025-11-07
+8005,Arapahoe,2029,3-5,22692,8358,0.7,15884,7526,0.4738101233946109,Critical,#d32f2f,494,CO Open Data + CO Demography Office,2025-11-07
 8007,Archuleta,2025,0-2,340,33,0.6,204,171,0.8382352941176471,Critical,#d32f2f,11,CO Open Data + CO Demography Office,2025-11-07
 8007,Archuleta,2025,0-5,680,82,0.65,442,360,0.8144796380090498,Critical,#d32f2f,11,CO Open Data + CO Demography Office,2025-11-07
 8007,Archuleta,2025,3-5,340,49,0.7,238,189,0.7941176470588235,Critical,#d32f2f,11,CO Open Data + CO Demography Office,2025-11-07
-8007,Archuleta,2029,0-2,352,33,0.6,211,178,0.8436018957345972,Critical,#d32f2f,11,CO Open Data + CO Demography Office,2025-11-07
-8007,Archuleta,2029,0-5,704,82,0.65,458,376,0.8209606986899564,Critical,#d32f2f,11,CO Open Data + CO Demography Office,2025-11-07
-8007,Archuleta,2029,3-5,352,49,0.7,246,197,0.8008130081300813,Critical,#d32f2f,11,CO Open Data + CO Demography Office,2025-11-07
+8007,Archuleta,2029,0-2,296,33,0.6,178,145,0.8146067415730337,Critical,#d32f2f,11,CO Open Data + CO Demography Office,2025-11-07
+8007,Archuleta,2029,0-5,628,82,0.65,408,326,0.7990196078431373,Critical,#d32f2f,11,CO Open Data + CO Demography Office,2025-11-07
+8007,Archuleta,2029,3-5,332,49,0.7,232,183,0.7887931034482759,Critical,#d32f2f,11,CO Open Data + CO Demography Office,2025-11-07
 8009,Baca,2025,0-2,101,5,0.6,61,56,0.9180327868852459,Critical,#d32f2f,5,CO Open Data + CO Demography Office,2025-11-07
 8009,Baca,2025,0-5,202,15,0.65,131,116,0.8854961832061069,Critical,#d32f2f,5,CO Open Data + CO Demography Office,2025-11-07
 8009,Baca,2025,3-5,101,10,0.7,71,61,0.8591549295774648,Critical,#d32f2f,5,CO Open Data + CO Demography Office,2025-11-07
-8009,Baca,2029,0-2,105,5,0.6,63,58,0.9206349206349206,Critical,#d32f2f,5,CO Open Data + CO Demography Office,2025-11-07
-8009,Baca,2029,0-5,210,15,0.65,136,121,0.8897058823529411,Critical,#d32f2f,5,CO Open Data + CO Demography Office,2025-11-07
-8009,Baca,2029,3-5,105,10,0.7,74,64,0.8648648648648649,Critical,#d32f2f,5,CO Open Data + CO Demography Office,2025-11-07
+8009,Baca,2029,0-2,90,5,0.6,54,49,0.9074074074074074,Critical,#d32f2f,5,CO Open Data + CO Demography Office,2025-11-07
+8009,Baca,2029,0-5,187,15,0.65,122,107,0.8770491803278688,Critical,#d32f2f,5,CO Open Data + CO Demography Office,2025-11-07
+8009,Baca,2029,3-5,97,10,0.7,68,58,0.8529411764705882,Critical,#d32f2f,5,CO Open Data + CO Demography Office,2025-11-07
 8011,Bent,2025,0-2,136,22,0.6,82,60,0.7317073170731707,Critical,#d32f2f,3,CO Open Data + CO Demography Office,2025-11-07
 8011,Bent,2025,0-5,272,26,0.65,177,151,0.8531073446327684,Critical,#d32f2f,3,CO Open Data + CO Demography Office,2025-11-07
 8011,Bent,2025,3-5,136,4,0.7,95,91,0.9578947368421052,Critical,#d32f2f,3,CO Open Data + CO Demography Office,2025-11-07
-8011,Bent,2029,0-2,141,22,0.6,85,63,0.7411764705882353,Critical,#d32f2f,3,CO Open Data + CO Demography Office,2025-11-07
-8011,Bent,2029,0-5,282,26,0.65,183,157,0.8579234972677595,Critical,#d32f2f,3,CO Open Data + CO Demography Office,2025-11-07
-8011,Bent,2029,3-5,141,4,0.7,99,95,0.9595959595959596,Critical,#d32f2f,3,CO Open Data + CO Demography Office,2025-11-07
+8011,Bent,2029,0-2,119,22,0.6,71,49,0.6901408450704225,Critical,#d32f2f,3,CO Open Data + CO Demography Office,2025-11-07
+8011,Bent,2029,0-5,245,26,0.65,159,133,0.8364779874213837,Critical,#d32f2f,3,CO Open Data + CO Demography Office,2025-11-07
+8011,Bent,2029,3-5,126,4,0.7,88,84,0.9545454545454546,Critical,#d32f2f,3,CO Open Data + CO Demography Office,2025-11-07
 8013,Boulder,2025,0-2,8015,2313,0.6,4809,2496,0.5190268247036806,Critical,#d32f2f,292,CO Open Data + CO Demography Office,2025-11-07
 8013,Boulder,2025,0-5,16030,4558,0.65,10420,5862,0.5625719769673705,Critical,#d32f2f,292,CO Open Data + CO Demography Office,2025-11-07
 8013,Boulder,2025,3-5,8015,2245,0.7,5610,3365,0.5998217468805704,Critical,#d32f2f,292,CO Open Data + CO Demography Office,2025-11-07
-8013,Boulder,2029,0-2,8300,2313,0.6,4980,2667,0.5355421686746988,Critical,#d32f2f,292,CO Open Data + CO Demography Office,2025-11-07
-8013,Boulder,2029,0-5,16600,4558,0.65,10790,6232,0.5775718257645969,Critical,#d32f2f,292,CO Open Data + CO Demography Office,2025-11-07
-8013,Boulder,2029,3-5,8300,2245,0.7,5810,3565,0.6135972461273667,Critical,#d32f2f,292,CO Open Data + CO Demography Office,2025-11-07
+8013,Boulder,2029,0-2,7226,2313,0.6,4336,2023,0.4665590405904059,Critical,#d32f2f,292,CO Open Data + CO Demography Office,2025-11-07
+8013,Boulder,2029,0-5,14551,4558,0.65,9458,4900,0.518079932332417,Critical,#d32f2f,292,CO Open Data + CO Demography Office,2025-11-07
+8013,Boulder,2029,3-5,7325,2245,0.7,5128,2883,0.5622074882995319,Critical,#d32f2f,292,CO Open Data + CO Demography Office,2025-11-07
 8014,Broomfield,2025,0-2,2105,772,0.6,1263,491,0.388756927949327,Critical,#d32f2f,59,CO Open Data + CO Demography Office,2025-11-07
 8014,Broomfield,2025,0-5,4211,1398,0.65,2737,1339,0.4892217756667884,Critical,#d32f2f,59,CO Open Data + CO Demography Office,2025-11-07
 8014,Broomfield,2025,3-5,2106,626,0.7,1474,848,0.5753052917232022,Critical,#d32f2f,59,CO Open Data + CO Demography Office,2025-11-07
-8014,Broomfield,2029,0-2,2180,772,0.6,1308,536,0.40978593272171254,Critical,#d32f2f,59,CO Open Data + CO Demography Office,2025-11-07
-8014,Broomfield,2029,0-5,4361,1398,0.65,2835,1437,0.5068783068783069,Critical,#d32f2f,59,CO Open Data + CO Demography Office,2025-11-07
-8014,Broomfield,2029,3-5,2181,626,0.7,1527,901,0.5900458415193189,Critical,#d32f2f,59,CO Open Data + CO Demography Office,2025-11-07
+8014,Broomfield,2029,0-2,2580,772,0.6,1548,776,0.5012919896640827,Critical,#d32f2f,59,CO Open Data + CO Demography Office,2025-11-07
+8014,Broomfield,2029,0-5,5371,1398,0.65,3491,2093,0.5995416786021197,Critical,#d32f2f,59,CO Open Data + CO Demography Office,2025-11-07
+8014,Broomfield,2029,3-5,2791,626,0.7,1954,1328,0.6796315250767656,Critical,#d32f2f,59,CO Open Data + CO Demography Office,2025-11-07
 8015,Chaffee,2025,0-2,460,88,0.6,276,188,0.6811594202898551,Critical,#d32f2f,18,CO Open Data + CO Demography Office,2025-11-07
 8015,Chaffee,2025,0-5,920,198,0.65,598,400,0.6688963210702341,Critical,#d32f2f,18,CO Open Data + CO Demography Office,2025-11-07
 8015,Chaffee,2025,3-5,460,110,0.7,322,212,0.6583850931677019,Critical,#d32f2f,18,CO Open Data + CO Demography Office,2025-11-07
-8015,Chaffee,2029,0-2,476,88,0.6,286,198,0.6923076923076923,Critical,#d32f2f,18,CO Open Data + CO Demography Office,2025-11-07
-8015,Chaffee,2029,0-5,952,198,0.65,619,421,0.6801292407108239,Critical,#d32f2f,18,CO Open Data + CO Demography Office,2025-11-07
-8015,Chaffee,2029,3-5,476,110,0.7,333,223,0.6696696696696697,Critical,#d32f2f,18,CO Open Data + CO Demography Office,2025-11-07
+8015,Chaffee,2029,0-2,428,88,0.6,257,169,0.6575875486381323,Critical,#d32f2f,18,CO Open Data + CO Demography Office,2025-11-07
+8015,Chaffee,2029,0-5,899,198,0.65,584,386,0.660958904109589,Critical,#d32f2f,18,CO Open Data + CO Demography Office,2025-11-07
+8015,Chaffee,2029,3-5,471,110,0.7,330,220,0.6666666666666666,Critical,#d32f2f,18,CO Open Data + CO Demography Office,2025-11-07
 8017,Cheyenne,2025,0-2,71,22,0.6,43,21,0.4883720930232558,Critical,#d32f2f,6,CO Open Data + CO Demography Office,2025-11-07
 8017,Cheyenne,2025,0-5,142,85,0.65,92,7,0.07608695652173914,Low,#9ccc65,6,CO Open Data + CO Demography Office,2025-11-07
 8017,Cheyenne,2025,3-5,71,63,0.7,50,-13,-0.26,Adequate,#66bb6a,6,CO Open Data + CO Demography Office,2025-11-07
-8017,Cheyenne,2029,0-2,74,22,0.6,44,22,0.5,Critical,#d32f2f,6,CO Open Data + CO Demography Office,2025-11-07
-8017,Cheyenne,2029,0-5,148,85,0.65,96,11,0.11458333333333333,Moderate,#fbc02d,6,CO Open Data + CO Demography Office,2025-11-07
-8017,Cheyenne,2029,3-5,74,63,0.7,52,-11,-0.21153846153846154,Adequate,#66bb6a,6,CO Open Data + CO Demography Office,2025-11-07
+8017,Cheyenne,2029,0-2,71,22,0.6,43,21,0.4883720930232558,Critical,#d32f2f,6,CO Open Data + CO Demography Office,2025-11-07
+8017,Cheyenne,2029,0-5,146,85,0.65,95,10,0.10526315789473684,Moderate,#fbc02d,6,CO Open Data + CO Demography Office,2025-11-07
+8017,Cheyenne,2029,3-5,75,63,0.7,52,-11,-0.21153846153846154,Adequate,#66bb6a,6,CO Open Data + CO Demography Office,2025-11-07
 8019,Clear Creek,2025,0-2,163,39,0.6,98,59,0.6020408163265306,Critical,#d32f2f,9,CO Open Data + CO Demography Office,2025-11-07
 8019,Clear Creek,2025,0-5,325,113,0.65,211,98,0.46445497630331756,Critical,#d32f2f,9,CO Open Data + CO Demography Office,2025-11-07
 8019,Clear Creek,2025,3-5,162,74,0.7,113,39,0.34513274336283184,Critical,#d32f2f,9,CO Open Data + CO Demography Office,2025-11-07
-8019,Clear Creek,2029,0-2,169,39,0.6,101,62,0.6138613861386139,Critical,#d32f2f,9,CO Open Data + CO Demography Office,2025-11-07
-8019,Clear Creek,2029,0-5,337,113,0.65,219,106,0.4840182648401826,Critical,#d32f2f,9,CO Open Data + CO Demography Office,2025-11-07
-8019,Clear Creek,2029,3-5,168,74,0.7,118,44,0.3728813559322034,Critical,#d32f2f,9,CO Open Data + CO Demography Office,2025-11-07
+8019,Clear Creek,2029,0-2,208,39,0.6,125,86,0.688,Critical,#d32f2f,9,CO Open Data + CO Demography Office,2025-11-07
+8019,Clear Creek,2029,0-5,446,113,0.65,290,177,0.6103448275862069,Critical,#d32f2f,9,CO Open Data + CO Demography Office,2025-11-07
+8019,Clear Creek,2029,3-5,238,74,0.7,167,93,0.5568862275449101,Critical,#d32f2f,9,CO Open Data + CO Demography Office,2025-11-07
 8021,Conejos,2025,0-2,283,4,0.6,170,166,0.9764705882352941,Critical,#d32f2f,4,CO Open Data + CO Demography Office,2025-11-07
 8021,Conejos,2025,0-5,565,99,0.65,367,268,0.7302452316076294,Critical,#d32f2f,4,CO Open Data + CO Demography Office,2025-11-07
 8021,Conejos,2025,3-5,282,95,0.7,197,102,0.5177664974619289,Critical,#d32f2f,4,CO Open Data + CO Demography Office,2025-11-07
-8021,Conejos,2029,0-2,293,4,0.6,176,172,0.9772727272727273,Critical,#d32f2f,4,CO Open Data + CO Demography Office,2025-11-07
-8021,Conejos,2029,0-5,585,99,0.65,380,281,0.7394736842105263,Critical,#d32f2f,4,CO Open Data + CO Demography Office,2025-11-07
-8021,Conejos,2029,3-5,292,95,0.7,204,109,0.5343137254901961,Critical,#d32f2f,4,CO Open Data + CO Demography Office,2025-11-07
+8021,Conejos,2029,0-2,285,4,0.6,171,167,0.9766081871345029,Critical,#d32f2f,4,CO Open Data + CO Demography Office,2025-11-07
+8021,Conejos,2029,0-5,583,99,0.65,379,280,0.7387862796833773,Critical,#d32f2f,4,CO Open Data + CO Demography Office,2025-11-07
+8021,Conejos,2029,3-5,298,95,0.7,209,114,0.5454545454545454,Critical,#d32f2f,4,CO Open Data + CO Demography Office,2025-11-07
 8023,Costilla,2025,0-2,100,22,0.6,60,38,0.6333333333333333,Critical,#d32f2f,3,CO Open Data + CO Demography Office,2025-11-07
 8023,Costilla,2025,0-5,199,84,0.65,129,45,0.3488372093023256,Critical,#d32f2f,3,CO Open Data + CO Demography Office,2025-11-07
 8023,Costilla,2025,3-5,99,62,0.7,69,7,0.10144927536231885,Moderate,#fbc02d,3,CO Open Data + CO Demography Office,2025-11-07
-8023,Costilla,2029,0-2,104,22,0.6,62,40,0.6451612903225806,Critical,#d32f2f,3,CO Open Data + CO Demography Office,2025-11-07
-8023,Costilla,2029,0-5,207,84,0.65,135,51,0.37777777777777777,Critical,#d32f2f,3,CO Open Data + CO Demography Office,2025-11-07
-8023,Costilla,2029,3-5,103,62,0.7,72,10,0.1388888888888889,Moderate,#fbc02d,3,CO Open Data + CO Demography Office,2025-11-07
+8023,Costilla,2029,0-2,97,22,0.6,58,36,0.6206896551724138,Critical,#d32f2f,3,CO Open Data + CO Demography Office,2025-11-07
+8023,Costilla,2029,0-5,202,84,0.65,131,47,0.35877862595419846,Critical,#d32f2f,3,CO Open Data + CO Demography Office,2025-11-07
+8023,Costilla,2029,3-5,105,62,0.7,74,12,0.16216216216216217,Moderate,#fbc02d,3,CO Open Data + CO Demography Office,2025-11-07
 8025,Crowley,2025,0-2,104,18,0.6,62,44,0.7096774193548387,Critical,#d32f2f,1,CO Open Data + CO Demography Office,2025-11-07
 8025,Crowley,2025,0-5,208,18,0.65,135,117,0.8666666666666667,Critical,#d32f2f,1,CO Open Data + CO Demography Office,2025-11-07
 8025,Crowley,2025,3-5,104,0,0.7,73,73,1.0,Critical,#d32f2f,1,CO Open Data + CO Demography Office,2025-11-07
-8025,Crowley,2029,0-2,108,18,0.6,65,47,0.7230769230769231,Critical,#d32f2f,1,CO Open Data + CO Demography Office,2025-11-07
-8025,Crowley,2029,0-5,216,18,0.65,140,122,0.8714285714285714,Critical,#d32f2f,1,CO Open Data + CO Demography Office,2025-11-07
+8025,Crowley,2029,0-2,116,18,0.6,70,52,0.7428571428571429,Critical,#d32f2f,1,CO Open Data + CO Demography Office,2025-11-07
+8025,Crowley,2029,0-5,224,18,0.65,146,128,0.8767123287671232,Critical,#d32f2f,1,CO Open Data + CO Demography Office,2025-11-07
 8025,Crowley,2029,3-5,108,0,0.7,76,76,1.0,Critical,#d32f2f,1,CO Open Data + CO Demography Office,2025-11-07
 8027,Custer,2025,0-2,48,17,0.6,29,12,0.41379310344827586,Critical,#d32f2f,4,CO Open Data + CO Demography Office,2025-11-07
 8027,Custer,2025,0-5,96,22,0.65,62,40,0.6451612903225806,Critical,#d32f2f,4,CO Open Data + CO Demography Office,2025-11-07
 8027,Custer,2025,3-5,48,5,0.7,34,29,0.8529411764705882,Critical,#d32f2f,4,CO Open Data + CO Demography Office,2025-11-07
-8027,Custer,2029,0-2,50,17,0.6,30,13,0.43333333333333335,Critical,#d32f2f,4,CO Open Data + CO Demography Office,2025-11-07
-8027,Custer,2029,0-5,100,22,0.65,65,43,0.6615384615384615,Critical,#d32f2f,4,CO Open Data + CO Demography Office,2025-11-07
-8027,Custer,2029,3-5,50,5,0.7,35,30,0.8571428571428571,Critical,#d32f2f,4,CO Open Data + CO Demography Office,2025-11-07
+8027,Custer,2029,0-2,201,17,0.6,121,104,0.859504132231405,Critical,#d32f2f,4,CO Open Data + CO Demography Office,2025-11-07
+8027,Custer,2029,0-5,400,22,0.65,260,238,0.9153846153846154,Critical,#d32f2f,4,CO Open Data + CO Demography Office,2025-11-07
+8027,Custer,2029,3-5,199,5,0.7,139,134,0.9640287769784173,Critical,#d32f2f,4,CO Open Data + CO Demography Office,2025-11-07
 8029,Delta,2025,0-2,826,42,0.6,496,454,0.9153225806451613,Critical,#d32f2f,21,CO Open Data + CO Demography Office,2025-11-07
 8029,Delta,2025,0-5,1651,171,0.65,1073,902,0.8406337371854613,Critical,#d32f2f,21,CO Open Data + CO Demography Office,2025-11-07
 8029,Delta,2025,3-5,825,129,0.7,578,449,0.7768166089965398,Critical,#d32f2f,21,CO Open Data + CO Demography Office,2025-11-07
-8029,Delta,2029,0-2,855,42,0.6,513,471,0.9181286549707602,Critical,#d32f2f,21,CO Open Data + CO Demography Office,2025-11-07
-8029,Delta,2029,0-5,1709,171,0.65,1111,940,0.8460846084608461,Critical,#d32f2f,21,CO Open Data + CO Demography Office,2025-11-07
-8029,Delta,2029,3-5,854,129,0.7,598,469,0.7842809364548495,Critical,#d32f2f,21,CO Open Data + CO Demography Office,2025-11-07
+8029,Delta,2029,0-2,861,42,0.6,517,475,0.9187620889748549,Critical,#d32f2f,21,CO Open Data + CO Demography Office,2025-11-07
+8029,Delta,2029,0-5,1764,171,0.65,1147,976,0.8509154315605929,Critical,#d32f2f,21,CO Open Data + CO Demography Office,2025-11-07
+8029,Delta,2029,3-5,903,129,0.7,632,503,0.7958860759493671,Critical,#d32f2f,21,CO Open Data + CO Demography Office,2025-11-07
 8031,Denver,2025,0-2,23712,4984,0.6,14227,9243,0.6496801855626625,Critical,#d32f2f,469,CO Open Data + CO Demography Office,2025-11-07
 8031,Denver,2025,0-5,47424,12782,0.65,30826,18044,0.5853500291961331,Critical,#d32f2f,469,CO Open Data + CO Demography Office,2025-11-07
 8031,Denver,2025,3-5,23712,7798,0.7,16598,8800,0.530184359561393,Critical,#d32f2f,469,CO Open Data + CO Demography Office,2025-11-07
-8031,Denver,2029,0-2,24554,4984,0.6,14732,9748,0.6616888406190605,Critical,#d32f2f,469,CO Open Data + CO Demography Office,2025-11-07
-8031,Denver,2029,0-5,49108,12782,0.65,31920,19138,0.599561403508772,Critical,#d32f2f,469,CO Open Data + CO Demography Office,2025-11-07
-8031,Denver,2029,3-5,24554,7798,0.7,17188,9390,0.5463113800325808,Critical,#d32f2f,469,CO Open Data + CO Demography Office,2025-11-07
+8031,Denver,2029,0-2,23773,4984,0.6,14264,9280,0.6505888951205833,Critical,#d32f2f,469,CO Open Data + CO Demography Office,2025-11-07
+8031,Denver,2029,0-5,44864,12782,0.65,29162,16380,0.5616898703792607,Critical,#d32f2f,469,CO Open Data + CO Demography Office,2025-11-07
+8031,Denver,2029,3-5,21091,7798,0.7,14764,6966,0.4718233541045787,Critical,#d32f2f,469,CO Open Data + CO Demography Office,2025-11-07
 8033,Dolores,2025,0-2,38,12,0.6,23,11,0.4782608695652174,Critical,#d32f2f,2,CO Open Data + CO Demography Office,2025-11-07
 8033,Dolores,2025,0-5,77,12,0.65,50,38,0.76,Critical,#d32f2f,2,CO Open Data + CO Demography Office,2025-11-07
 8033,Dolores,2025,3-5,39,0,0.7,27,27,1.0,Critical,#d32f2f,2,CO Open Data + CO Demography Office,2025-11-07
-8033,Dolores,2029,0-2,39,12,0.6,23,11,0.4782608695652174,Critical,#d32f2f,2,CO Open Data + CO Demography Office,2025-11-07
-8033,Dolores,2029,0-5,79,12,0.65,51,39,0.7647058823529411,Critical,#d32f2f,2,CO Open Data + CO Demography Office,2025-11-07
-8033,Dolores,2029,3-5,40,0,0.7,28,28,1.0,Critical,#d32f2f,2,CO Open Data + CO Demography Office,2025-11-07
+8033,Dolores,2029,0-2,33,12,0.6,20,8,0.4,Critical,#d32f2f,2,CO Open Data + CO Demography Office,2025-11-07
+8033,Dolores,2029,0-5,72,12,0.65,47,35,0.7446808510638298,Critical,#d32f2f,2,CO Open Data + CO Demography Office,2025-11-07
+8033,Dolores,2029,3-5,39,0,0.7,27,27,1.0,Critical,#d32f2f,2,CO Open Data + CO Demography Office,2025-11-07
 8035,Douglas,2025,0-2,11809,3301,0.6,7085,3784,0.5340860973888497,Critical,#d32f2f,314,CO Open Data + CO Demography Office,2025-11-07
 8035,Douglas,2025,0-5,23618,6631,0.65,15352,8721,0.568069306930693,Critical,#d32f2f,314,CO Open Data + CO Demography Office,2025-11-07
 8035,Douglas,2025,3-5,11809,3330,0.7,8266,4936,0.5971449310428261,Critical,#d32f2f,314,CO Open Data + CO Demography Office,2025-11-07
-8035,Douglas,2029,0-2,12229,3301,0.6,7337,4036,0.5500885920676025,Critical,#d32f2f,314,CO Open Data + CO Demography Office,2025-11-07
-8035,Douglas,2029,0-5,24458,6631,0.65,15898,9267,0.582903509875456,Critical,#d32f2f,314,CO Open Data + CO Demography Office,2025-11-07
-8035,Douglas,2029,3-5,12229,3330,0.7,8560,5230,0.610981308411215,Critical,#d32f2f,314,CO Open Data + CO Demography Office,2025-11-07
+8035,Douglas,2029,0-2,12906,3301,0.6,7744,4443,0.5737345041322314,Critical,#d32f2f,314,CO Open Data + CO Demography Office,2025-11-07
+8035,Douglas,2029,0-5,26640,6631,0.65,17316,10685,0.617059367059367,Critical,#d32f2f,314,CO Open Data + CO Demography Office,2025-11-07
+8035,Douglas,2029,3-5,13734,3330,0.7,9614,6284,0.6536301227376742,Critical,#d32f2f,314,CO Open Data + CO Demography Office,2025-11-07
 8037,Eagle,2025,0-2,1646,575,0.6,988,413,0.4180161943319838,Critical,#d32f2f,54,CO Open Data + CO Demography Office,2025-11-07
 8037,Eagle,2025,0-5,3293,1247,0.65,2140,893,0.41728971962616823,Critical,#d32f2f,54,CO Open Data + CO Demography Office,2025-11-07
 8037,Eagle,2025,3-5,1647,672,0.7,1153,481,0.417172593235039,Critical,#d32f2f,54,CO Open Data + CO Demography Office,2025-11-07
-8037,Eagle,2029,0-2,1704,575,0.6,1022,447,0.43737769080234834,Critical,#d32f2f,54,CO Open Data + CO Demography Office,2025-11-07
-8037,Eagle,2029,0-5,3410,1247,0.65,2216,969,0.43727436823104693,Critical,#d32f2f,54,CO Open Data + CO Demography Office,2025-11-07
-8037,Eagle,2029,3-5,1706,672,0.7,1194,522,0.4371859296482412,Critical,#d32f2f,54,CO Open Data + CO Demography Office,2025-11-07
+8037,Eagle,2029,0-2,1387,575,0.6,832,257,0.3088942307692308,Critical,#d32f2f,54,CO Open Data + CO Demography Office,2025-11-07
+8037,Eagle,2029,0-5,2792,1247,0.65,1815,568,0.31294765840220384,Critical,#d32f2f,54,CO Open Data + CO Demography Office,2025-11-07
+8037,Eagle,2029,3-5,1405,672,0.7,983,311,0.31637843336724314,Critical,#d32f2f,54,CO Open Data + CO Demography Office,2025-11-07
 8041,El Paso,2025,0-2,27608,3881,0.6,16565,12684,0.7657108361002113,Critical,#d32f2f,555,CO Open Data + CO Demography Office,2025-11-07
 8041,El Paso,2025,0-5,55217,9559,0.65,35891,26332,0.733665821515143,Critical,#d32f2f,555,CO Open Data + CO Demography Office,2025-11-07
 8041,El Paso,2025,3-5,27609,5678,0.7,19326,13648,0.7061989030321846,Critical,#d32f2f,555,CO Open Data + CO Demography Office,2025-11-07
-8041,El Paso,2029,0-2,28589,3881,0.6,17153,13272,0.7737422025301697,Critical,#d32f2f,555,CO Open Data + CO Demography Office,2025-11-07
-8041,El Paso,2029,0-5,57179,9559,0.65,37166,27607,0.7428025614809234,Critical,#d32f2f,555,CO Open Data + CO Demography Office,2025-11-07
-8041,El Paso,2029,3-5,28590,5678,0.7,20013,14335,0.7162844151301654,Critical,#d32f2f,555,CO Open Data + CO Demography Office,2025-11-07
+8041,El Paso,2029,0-2,28773,3881,0.6,17264,13383,0.7751969416126042,Critical,#d32f2f,555,CO Open Data + CO Demography Office,2025-11-07
+8041,El Paso,2029,0-5,55564,9559,0.65,36117,26558,0.73533239194839,Critical,#d32f2f,555,CO Open Data + CO Demography Office,2025-11-07
+8041,El Paso,2029,3-5,26791,5678,0.7,18754,13076,0.697237922576517,Critical,#d32f2f,555,CO Open Data + CO Demography Office,2025-11-07
 8039,Elbert,2025,0-2,675,53,0.6,405,352,0.8691358024691358,Critical,#d32f2f,19,CO Open Data + CO Demography Office,2025-11-07
 8039,Elbert,2025,0-5,1350,253,0.65,878,625,0.7118451025056948,Critical,#d32f2f,19,CO Open Data + CO Demography Office,2025-11-07
 8039,Elbert,2025,3-5,675,200,0.7,472,272,0.576271186440678,Critical,#d32f2f,19,CO Open Data + CO Demography Office,2025-11-07
-8039,Elbert,2029,0-2,699,53,0.6,419,366,0.8735083532219571,Critical,#d32f2f,19,CO Open Data + CO Demography Office,2025-11-07
-8039,Elbert,2029,0-5,1398,253,0.65,909,656,0.7216721672167217,Critical,#d32f2f,19,CO Open Data + CO Demography Office,2025-11-07
-8039,Elbert,2029,3-5,699,200,0.7,489,289,0.591002044989775,Critical,#d32f2f,19,CO Open Data + CO Demography Office,2025-11-07
+8039,Elbert,2029,0-2,988,53,0.6,593,540,0.9106239460370995,Critical,#d32f2f,19,CO Open Data + CO Demography Office,2025-11-07
+8039,Elbert,2029,0-5,2092,253,0.65,1360,1107,0.8139705882352941,Critical,#d32f2f,19,CO Open Data + CO Demography Office,2025-11-07
+8039,Elbert,2029,3-5,1104,200,0.7,773,573,0.741267787839586,Critical,#d32f2f,19,CO Open Data + CO Demography Office,2025-11-07
 8043,Fremont,2025,0-2,1208,104,0.6,725,621,0.856551724137931,Critical,#d32f2f,20,CO Open Data + CO Demography Office,2025-11-07
 8043,Fremont,2025,0-5,2417,328,0.65,1571,1243,0.7912157861234882,Critical,#d32f2f,20,CO Open Data + CO Demography Office,2025-11-07
 8043,Fremont,2025,3-5,1209,224,0.7,846,622,0.735224586288416,Critical,#d32f2f,20,CO Open Data + CO Demography Office,2025-11-07
-8043,Fremont,2029,0-2,1251,104,0.6,751,647,0.8615179760319573,Critical,#d32f2f,20,CO Open Data + CO Demography Office,2025-11-07
-8043,Fremont,2029,0-5,2503,328,0.65,1627,1299,0.7984019668100799,Critical,#d32f2f,20,CO Open Data + CO Demography Office,2025-11-07
-8043,Fremont,2029,3-5,1252,224,0.7,876,652,0.7442922374429224,Critical,#d32f2f,20,CO Open Data + CO Demography Office,2025-11-07
+8043,Fremont,2029,0-2,992,104,0.6,595,491,0.8252100840336134,Critical,#d32f2f,20,CO Open Data + CO Demography Office,2025-11-07
+8043,Fremont,2029,0-5,2074,328,0.65,1348,1020,0.7566765578635015,Critical,#d32f2f,20,CO Open Data + CO Demography Office,2025-11-07
+8043,Fremont,2029,3-5,1082,224,0.7,757,533,0.7040951122853368,Critical,#d32f2f,20,CO Open Data + CO Demography Office,2025-11-07
 8045,Garfield,2025,0-2,2385,399,0.6,1431,1032,0.7211740041928721,Critical,#d32f2f,63,CO Open Data + CO Demography Office,2025-11-07
 8045,Garfield,2025,0-5,4770,710,0.65,3100,2390,0.7709677419354839,Critical,#d32f2f,63,CO Open Data + CO Demography Office,2025-11-07
 8045,Garfield,2025,3-5,2385,311,0.7,1670,1359,0.8137724550898203,Critical,#d32f2f,63,CO Open Data + CO Demography Office,2025-11-07
-8045,Garfield,2029,0-2,2470,399,0.6,1482,1083,0.7307692307692307,Critical,#d32f2f,63,CO Open Data + CO Demography Office,2025-11-07
-8045,Garfield,2029,0-5,4940,710,0.65,3211,2501,0.7788850825288072,Critical,#d32f2f,63,CO Open Data + CO Demography Office,2025-11-07
-8045,Garfield,2029,3-5,2470,311,0.7,1729,1418,0.8201272411798728,Critical,#d32f2f,63,CO Open Data + CO Demography Office,2025-11-07
+8045,Garfield,2029,0-2,2450,399,0.6,1470,1071,0.7285714285714285,Critical,#d32f2f,63,CO Open Data + CO Demography Office,2025-11-07
+8045,Garfield,2029,0-5,4766,710,0.65,3098,2388,0.7708198837959974,Critical,#d32f2f,63,CO Open Data + CO Demography Office,2025-11-07
+8045,Garfield,2029,3-5,2316,311,0.7,1621,1310,0.8081431215299199,Critical,#d32f2f,63,CO Open Data + CO Demography Office,2025-11-07
 8047,Gilpin,2025,0-2,121,0,0.6,73,73,1.0,Critical,#d32f2f,3,CO Open Data + CO Demography Office,2025-11-07
 8047,Gilpin,2025,0-5,242,80,0.65,157,77,0.49044585987261147,Critical,#d32f2f,3,CO Open Data + CO Demography Office,2025-11-07
 8047,Gilpin,2025,3-5,121,80,0.7,85,5,0.058823529411764705,Low,#9ccc65,3,CO Open Data + CO Demography Office,2025-11-07
-8047,Gilpin,2029,0-2,125,0,0.6,75,75,1.0,Critical,#d32f2f,3,CO Open Data + CO Demography Office,2025-11-07
-8047,Gilpin,2029,0-5,250,80,0.65,162,82,0.5061728395061729,Critical,#d32f2f,3,CO Open Data + CO Demography Office,2025-11-07
-8047,Gilpin,2029,3-5,125,80,0.7,88,8,0.09090909090909091,Low,#9ccc65,3,CO Open Data + CO Demography Office,2025-11-07
+8047,Gilpin,2029,0-2,162,0,0.6,97,97,1.0,Critical,#d32f2f,3,CO Open Data + CO Demography Office,2025-11-07
+8047,Gilpin,2029,0-5,342,80,0.65,222,142,0.6396396396396397,Critical,#d32f2f,3,CO Open Data + CO Demography Office,2025-11-07
+8047,Gilpin,2029,3-5,180,80,0.7,126,46,0.36507936507936506,Critical,#d32f2f,3,CO Open Data + CO Demography Office,2025-11-07
 8049,Grand,2025,0-2,391,87,0.6,235,148,0.6297872340425532,Critical,#d32f2f,22,CO Open Data + CO Demography Office,2025-11-07
 8049,Grand,2025,0-5,782,162,0.65,508,346,0.6811023622047244,Critical,#d32f2f,22,CO Open Data + CO Demography Office,2025-11-07
 8049,Grand,2025,3-5,391,75,0.7,274,199,0.7262773722627737,Critical,#d32f2f,22,CO Open Data + CO Demography Office,2025-11-07
-8049,Grand,2029,0-2,405,87,0.6,243,156,0.6419753086419753,Critical,#d32f2f,22,CO Open Data + CO Demography Office,2025-11-07
-8049,Grand,2029,0-5,810,162,0.65,526,364,0.6920152091254753,Critical,#d32f2f,22,CO Open Data + CO Demography Office,2025-11-07
-8049,Grand,2029,3-5,405,75,0.7,284,209,0.7359154929577465,Critical,#d32f2f,22,CO Open Data + CO Demography Office,2025-11-07
+8049,Grand,2029,0-2,459,87,0.6,275,188,0.6836363636363636,Critical,#d32f2f,22,CO Open Data + CO Demography Office,2025-11-07
+8049,Grand,2029,0-5,886,162,0.65,576,414,0.71875,Critical,#d32f2f,22,CO Open Data + CO Demography Office,2025-11-07
+8049,Grand,2029,3-5,427,75,0.7,299,224,0.7491638795986622,Critical,#d32f2f,22,CO Open Data + CO Demography Office,2025-11-07
 8051,Gunnison,2025,0-2,346,133,0.6,208,75,0.3605769230769231,Critical,#d32f2f,20,CO Open Data + CO Demography Office,2025-11-07
 8051,Gunnison,2025,0-5,692,155,0.65,450,295,0.6555555555555556,Critical,#d32f2f,20,CO Open Data + CO Demography Office,2025-11-07
 8051,Gunnison,2025,3-5,346,22,0.7,242,220,0.9090909090909091,Critical,#d32f2f,20,CO Open Data + CO Demography Office,2025-11-07
-8051,Gunnison,2029,0-2,358,133,0.6,215,82,0.3813953488372093,Critical,#d32f2f,20,CO Open Data + CO Demography Office,2025-11-07
-8051,Gunnison,2029,0-5,716,155,0.65,465,310,0.6666666666666666,Critical,#d32f2f,20,CO Open Data + CO Demography Office,2025-11-07
-8051,Gunnison,2029,3-5,358,22,0.7,251,229,0.9123505976095617,Critical,#d32f2f,20,CO Open Data + CO Demography Office,2025-11-07
+8051,Gunnison,2029,0-2,434,133,0.6,260,127,0.48846153846153845,Critical,#d32f2f,20,CO Open Data + CO Demography Office,2025-11-07
+8051,Gunnison,2029,0-5,917,155,0.65,596,441,0.7399328859060402,Critical,#d32f2f,20,CO Open Data + CO Demography Office,2025-11-07
+8051,Gunnison,2029,3-5,483,22,0.7,338,316,0.9349112426035503,Critical,#d32f2f,20,CO Open Data + CO Demography Office,2025-11-07
 8053,Hinsdale,2025,0-2,14,7,0.6,8,1,0.125,Moderate,#fbc02d,3,CO Open Data + CO Demography Office,2025-11-07
 8053,Hinsdale,2025,0-5,28,15,0.65,18,3,0.16666666666666666,Moderate,#fbc02d,3,CO Open Data + CO Demography Office,2025-11-07
 8053,Hinsdale,2025,3-5,14,8,0.7,10,2,0.2,Moderate,#fbc02d,3,CO Open Data + CO Demography Office,2025-11-07
 8053,Hinsdale,2029,0-2,14,7,0.6,8,1,0.125,Moderate,#fbc02d,3,CO Open Data + CO Demography Office,2025-11-07
-8053,Hinsdale,2029,0-5,28,15,0.65,18,3,0.16666666666666666,Moderate,#fbc02d,3,CO Open Data + CO Demography Office,2025-11-07
-8053,Hinsdale,2029,3-5,14,8,0.7,10,2,0.2,Moderate,#fbc02d,3,CO Open Data + CO Demography Office,2025-11-07
+8053,Hinsdale,2029,0-5,25,15,0.65,16,1,0.0625,Low,#9ccc65,3,CO Open Data + CO Demography Office,2025-11-07
+8053,Hinsdale,2029,3-5,11,8,0.7,8,0,0.0,Adequate,#66bb6a,3,CO Open Data + CO Demography Office,2025-11-07
 8055,Huerfano,2025,0-2,195,13,0.6,117,104,0.8888888888888888,Critical,#d32f2f,4,CO Open Data + CO Demography Office,2025-11-07
 8055,Huerfano,2025,0-5,390,65,0.65,254,189,0.7440944881889764,Critical,#d32f2f,4,CO Open Data + CO Demography Office,2025-11-07
 8055,Huerfano,2025,3-5,195,52,0.7,136,84,0.6176470588235294,Critical,#d32f2f,4,CO Open Data + CO Demography Office,2025-11-07
-8055,Huerfano,2029,0-2,202,13,0.6,121,108,0.8925619834710744,Critical,#d32f2f,4,CO Open Data + CO Demography Office,2025-11-07
-8055,Huerfano,2029,0-5,404,65,0.65,263,198,0.752851711026616,Critical,#d32f2f,4,CO Open Data + CO Demography Office,2025-11-07
-8055,Huerfano,2029,3-5,202,52,0.7,141,89,0.6312056737588653,Critical,#d32f2f,4,CO Open Data + CO Demography Office,2025-11-07
+8055,Huerfano,2029,0-2,174,13,0.6,104,91,0.875,Critical,#d32f2f,4,CO Open Data + CO Demography Office,2025-11-07
+8055,Huerfano,2029,0-5,363,65,0.65,236,171,0.7245762711864406,Critical,#d32f2f,4,CO Open Data + CO Demography Office,2025-11-07
+8055,Huerfano,2029,3-5,189,52,0.7,132,80,0.6060606060606061,Critical,#d32f2f,4,CO Open Data + CO Demography Office,2025-11-07
 8057,Jackson,2025,0-2,28,0,0.6,17,17,1.0,Critical,#d32f2f,1,CO Open Data + CO Demography Office,2025-11-07
 8057,Jackson,2025,0-5,56,15,0.65,36,21,0.5833333333333334,Critical,#d32f2f,1,CO Open Data + CO Demography Office,2025-11-07
 8057,Jackson,2025,3-5,28,15,0.7,20,5,0.25,Significant,#f57c00,1,CO Open Data + CO Demography Office,2025-11-07
-8057,Jackson,2029,0-2,29,0,0.6,17,17,1.0,Critical,#d32f2f,1,CO Open Data + CO Demography Office,2025-11-07
-8057,Jackson,2029,0-5,58,15,0.65,38,23,0.6052631578947368,Critical,#d32f2f,1,CO Open Data + CO Demography Office,2025-11-07
-8057,Jackson,2029,3-5,29,15,0.7,20,5,0.25,Significant,#f57c00,1,CO Open Data + CO Demography Office,2025-11-07
+8057,Jackson,2029,0-2,31,0,0.6,19,19,1.0,Critical,#d32f2f,1,CO Open Data + CO Demography Office,2025-11-07
+8057,Jackson,2029,0-5,66,15,0.65,43,28,0.6511627906976745,Critical,#d32f2f,1,CO Open Data + CO Demography Office,2025-11-07
+8057,Jackson,2029,3-5,35,15,0.7,24,9,0.375,Critical,#d32f2f,1,CO Open Data + CO Demography Office,2025-11-07
 8059,Jefferson,2025,0-2,16852,5064,0.6,10111,5047,0.49915933142122443,Critical,#d32f2f,489,CO Open Data + CO Demography Office,2025-11-07
 8059,Jefferson,2025,0-5,33703,8604,0.65,21907,13303,0.6072488245766193,Critical,#d32f2f,489,CO Open Data + CO Demography Office,2025-11-07
 8059,Jefferson,2025,3-5,16851,3540,0.7,11796,8256,0.6998982706002035,Critical,#d32f2f,489,CO Open Data + CO Demography Office,2025-11-07
-8059,Jefferson,2029,0-2,17451,5064,0.6,10471,5407,0.5163785693821029,Critical,#d32f2f,489,CO Open Data + CO Demography Office,2025-11-07
-8059,Jefferson,2029,0-5,34901,8604,0.65,22686,14082,0.6207352552234858,Critical,#d32f2f,489,CO Open Data + CO Demography Office,2025-11-07
-8059,Jefferson,2029,3-5,17450,3540,0.7,12215,8675,0.7101923864101515,Critical,#d32f2f,489,CO Open Data + CO Demography Office,2025-11-07
+8059,Jefferson,2029,0-2,15958,5064,0.6,9575,4511,0.47112271540469974,Critical,#d32f2f,489,CO Open Data + CO Demography Office,2025-11-07
+8059,Jefferson,2029,0-5,32745,8604,0.65,21284,12680,0.5957526780680323,Critical,#d32f2f,489,CO Open Data + CO Demography Office,2025-11-07
+8059,Jefferson,2029,3-5,16787,3540,0.7,11751,8211,0.6987490426346694,Critical,#d32f2f,489,CO Open Data + CO Demography Office,2025-11-07
 8061,Kiowa,2025,0-2,74,0,0.6,44,44,1.0,Critical,#d32f2f,2,CO Open Data + CO Demography Office,2025-11-07
 8061,Kiowa,2025,0-5,148,15,0.65,96,81,0.84375,Critical,#d32f2f,2,CO Open Data + CO Demography Office,2025-11-07
 8061,Kiowa,2025,3-5,74,15,0.7,52,37,0.7115384615384616,Critical,#d32f2f,2,CO Open Data + CO Demography Office,2025-11-07
-8061,Kiowa,2029,0-2,77,0,0.6,46,46,1.0,Critical,#d32f2f,2,CO Open Data + CO Demography Office,2025-11-07
-8061,Kiowa,2029,0-5,154,15,0.65,100,85,0.85,Critical,#d32f2f,2,CO Open Data + CO Demography Office,2025-11-07
-8061,Kiowa,2029,3-5,77,15,0.7,54,39,0.7222222222222222,Critical,#d32f2f,2,CO Open Data + CO Demography Office,2025-11-07
+8061,Kiowa,2029,0-2,49,0,0.6,29,29,1.0,Critical,#d32f2f,2,CO Open Data + CO Demography Office,2025-11-07
+8061,Kiowa,2029,0-5,102,15,0.65,66,51,0.7727272727272727,Critical,#d32f2f,2,CO Open Data + CO Demography Office,2025-11-07
+8061,Kiowa,2029,3-5,53,15,0.7,37,22,0.5945945945945946,Critical,#d32f2f,2,CO Open Data + CO Demography Office,2025-11-07
 8063,Kit Carson,2025,0-2,279,29,0.6,167,138,0.8263473053892215,Critical,#d32f2f,10,CO Open Data + CO Demography Office,2025-11-07
 8063,Kit Carson,2025,0-5,558,159,0.65,363,204,0.5619834710743802,Critical,#d32f2f,10,CO Open Data + CO Demography Office,2025-11-07
 8063,Kit Carson,2025,3-5,279,130,0.7,195,65,0.3333333333333333,Critical,#d32f2f,10,CO Open Data + CO Demography Office,2025-11-07
-8063,Kit Carson,2029,0-2,289,29,0.6,173,144,0.8323699421965318,Critical,#d32f2f,10,CO Open Data + CO Demography Office,2025-11-07
-8063,Kit Carson,2029,0-5,578,159,0.65,376,217,0.5771276595744681,Critical,#d32f2f,10,CO Open Data + CO Demography Office,2025-11-07
-8063,Kit Carson,2029,3-5,289,130,0.7,202,72,0.3564356435643564,Critical,#d32f2f,10,CO Open Data + CO Demography Office,2025-11-07
+8063,Kit Carson,2029,0-2,228,29,0.6,137,108,0.7883211678832117,Critical,#d32f2f,10,CO Open Data + CO Demography Office,2025-11-07
+8063,Kit Carson,2029,0-5,459,159,0.65,298,139,0.4664429530201342,Critical,#d32f2f,10,CO Open Data + CO Demography Office,2025-11-07
+8063,Kit Carson,2029,3-5,231,130,0.7,162,32,0.19753086419753085,Moderate,#fbc02d,10,CO Open Data + CO Demography Office,2025-11-07
 8067,La Plata,2025,0-2,1490,292,0.6,894,602,0.6733780760626398,Critical,#d32f2f,44,CO Open Data + CO Demography Office,2025-11-07
 8067,La Plata,2025,0-5,2981,553,0.65,1938,1385,0.7146542827657378,Critical,#d32f2f,44,CO Open Data + CO Demography Office,2025-11-07
 8067,La Plata,2025,3-5,1491,261,0.7,1044,783,0.75,Critical,#d32f2f,44,CO Open Data + CO Demography Office,2025-11-07
-8067,La Plata,2029,0-2,1543,292,0.6,926,634,0.6846652267818575,Critical,#d32f2f,44,CO Open Data + CO Demography Office,2025-11-07
-8067,La Plata,2029,0-5,3087,553,0.65,2007,1454,0.7244643746885899,Critical,#d32f2f,44,CO Open Data + CO Demography Office,2025-11-07
-8067,La Plata,2029,3-5,1544,261,0.7,1081,820,0.7585568917668826,Critical,#d32f2f,44,CO Open Data + CO Demography Office,2025-11-07
+8067,La Plata,2029,0-2,1152,292,0.6,691,399,0.5774240231548481,Critical,#d32f2f,44,CO Open Data + CO Demography Office,2025-11-07
+8067,La Plata,2029,0-5,2330,553,0.65,1514,961,0.6347424042272127,Critical,#d32f2f,44,CO Open Data + CO Demography Office,2025-11-07
+8067,La Plata,2029,3-5,1178,261,0.7,825,564,0.6836363636363636,Critical,#d32f2f,44,CO Open Data + CO Demography Office,2025-11-07
 8065,Lake,2025,0-2,188,12,0.6,113,101,0.8938053097345132,Critical,#d32f2f,4,CO Open Data + CO Demography Office,2025-11-07
 8065,Lake,2025,0-5,376,16,0.65,244,228,0.9344262295081968,Critical,#d32f2f,4,CO Open Data + CO Demography Office,2025-11-07
 8065,Lake,2025,3-5,188,4,0.7,132,128,0.9696969696969697,Critical,#d32f2f,4,CO Open Data + CO Demography Office,2025-11-07
-8065,Lake,2029,0-2,195,12,0.6,117,105,0.8974358974358975,Critical,#d32f2f,4,CO Open Data + CO Demography Office,2025-11-07
-8065,Lake,2029,0-5,390,16,0.65,254,238,0.937007874015748,Critical,#d32f2f,4,CO Open Data + CO Demography Office,2025-11-07
-8065,Lake,2029,3-5,195,4,0.7,136,132,0.9705882352941176,Critical,#d32f2f,4,CO Open Data + CO Demography Office,2025-11-07
+8065,Lake,2029,0-2,267,12,0.6,160,148,0.925,Critical,#d32f2f,4,CO Open Data + CO Demography Office,2025-11-07
+8065,Lake,2029,0-5,510,16,0.65,332,316,0.9518072289156626,Critical,#d32f2f,4,CO Open Data + CO Demography Office,2025-11-07
+8065,Lake,2029,3-5,243,4,0.7,170,166,0.9764705882352941,Critical,#d32f2f,4,CO Open Data + CO Demography Office,2025-11-07
 8069,Larimer,2025,0-2,9812,2442,0.6,5887,3445,0.5851877017156446,Critical,#d32f2f,314,CO Open Data + CO Demography Office,2025-11-07
 8069,Larimer,2025,0-5,19624,3476,0.65,12756,9280,0.7275007839448103,Critical,#d32f2f,314,CO Open Data + CO Demography Office,2025-11-07
 8069,Larimer,2025,3-5,9812,1034,0.7,6868,5834,0.84944670937682,Critical,#d32f2f,314,CO Open Data + CO Demography Office,2025-11-07
-8069,Larimer,2029,0-2,10161,2442,0.6,6097,3655,0.5994751517139577,Critical,#d32f2f,314,CO Open Data + CO Demography Office,2025-11-07
-8069,Larimer,2029,0-5,20322,3476,0.65,13209,9733,0.7368460897872663,Critical,#d32f2f,314,CO Open Data + CO Demography Office,2025-11-07
-8069,Larimer,2029,3-5,10161,1034,0.7,7113,6079,0.8546323632785041,Critical,#d32f2f,314,CO Open Data + CO Demography Office,2025-11-07
+8069,Larimer,2029,0-2,10457,2442,0.6,6274,3832,0.6107746254383168,Critical,#d32f2f,314,CO Open Data + CO Demography Office,2025-11-07
+8069,Larimer,2029,0-5,21109,3476,0.65,13721,10245,0.7466656949201953,Critical,#d32f2f,314,CO Open Data + CO Demography Office,2025-11-07
+8069,Larimer,2029,3-5,10652,1034,0.7,7456,6422,0.8613197424892703,Critical,#d32f2f,314,CO Open Data + CO Demography Office,2025-11-07
 8071,Las Animas,2025,0-2,400,24,0.6,240,216,0.9,Critical,#d32f2f,7,CO Open Data + CO Demography Office,2025-11-07
 8071,Las Animas,2025,0-5,799,136,0.65,519,383,0.7379576107899807,Critical,#d32f2f,7,CO Open Data + CO Demography Office,2025-11-07
 8071,Las Animas,2025,3-5,399,112,0.7,279,167,0.5985663082437276,Critical,#d32f2f,7,CO Open Data + CO Demography Office,2025-11-07
-8071,Las Animas,2029,0-2,414,24,0.6,248,224,0.9032258064516129,Critical,#d32f2f,7,CO Open Data + CO Demography Office,2025-11-07
-8071,Las Animas,2029,0-5,827,136,0.65,538,402,0.7472118959107806,Critical,#d32f2f,7,CO Open Data + CO Demography Office,2025-11-07
-8071,Las Animas,2029,3-5,413,112,0.7,289,177,0.6124567474048442,Critical,#d32f2f,7,CO Open Data + CO Demography Office,2025-11-07
+8071,Las Animas,2029,0-2,296,24,0.6,178,154,0.8651685393258427,Critical,#d32f2f,7,CO Open Data + CO Demography Office,2025-11-07
+8071,Las Animas,2029,0-5,616,136,0.65,400,264,0.66,Critical,#d32f2f,7,CO Open Data + CO Demography Office,2025-11-07
+8071,Las Animas,2029,3-5,320,112,0.7,224,112,0.5,Critical,#d32f2f,7,CO Open Data + CO Demography Office,2025-11-07
 8073,Lincoln,2025,0-2,152,11,0.6,91,80,0.8791208791208791,Critical,#d32f2f,5,CO Open Data + CO Demography Office,2025-11-07
 8073,Lincoln,2025,0-5,304,35,0.65,198,163,0.8232323232323232,Critical,#d32f2f,5,CO Open Data + CO Demography Office,2025-11-07
 8073,Lincoln,2025,3-5,152,24,0.7,106,82,0.7735849056603774,Critical,#d32f2f,5,CO Open Data + CO Demography Office,2025-11-07
-8073,Lincoln,2029,0-2,157,11,0.6,94,83,0.8829787234042553,Critical,#d32f2f,5,CO Open Data + CO Demography Office,2025-11-07
-8073,Lincoln,2029,0-5,314,35,0.65,204,169,0.8284313725490197,Critical,#d32f2f,5,CO Open Data + CO Demography Office,2025-11-07
-8073,Lincoln,2029,3-5,157,24,0.7,110,86,0.7818181818181819,Critical,#d32f2f,5,CO Open Data + CO Demography Office,2025-11-07
+8073,Lincoln,2029,0-2,130,11,0.6,78,67,0.8589743589743589,Critical,#d32f2f,5,CO Open Data + CO Demography Office,2025-11-07
+8073,Lincoln,2029,0-5,273,35,0.65,177,142,0.8022598870056498,Critical,#d32f2f,5,CO Open Data + CO Demography Office,2025-11-07
+8073,Lincoln,2029,3-5,143,24,0.7,100,76,0.76,Critical,#d32f2f,5,CO Open Data + CO Demography Office,2025-11-07
 8075,Logan,2025,0-2,701,75,0.6,421,346,0.8218527315914489,Critical,#d32f2f,22,CO Open Data + CO Demography Office,2025-11-07
 8075,Logan,2025,0-5,1402,222,0.65,911,689,0.756311745334797,Critical,#d32f2f,22,CO Open Data + CO Demography Office,2025-11-07
 8075,Logan,2025,3-5,701,147,0.7,491,344,0.7006109979633401,Critical,#d32f2f,22,CO Open Data + CO Demography Office,2025-11-07
-8075,Logan,2029,0-2,726,75,0.6,436,361,0.8279816513761468,Critical,#d32f2f,22,CO Open Data + CO Demography Office,2025-11-07
-8075,Logan,2029,0-5,1452,222,0.65,944,722,0.7648305084745762,Critical,#d32f2f,22,CO Open Data + CO Demography Office,2025-11-07
-8075,Logan,2029,3-5,726,147,0.7,508,361,0.7106299212598425,Critical,#d32f2f,22,CO Open Data + CO Demography Office,2025-11-07
+8075,Logan,2029,0-2,541,75,0.6,325,250,0.7692307692307693,Critical,#d32f2f,22,CO Open Data + CO Demography Office,2025-11-07
+8075,Logan,2029,0-5,1099,222,0.65,714,492,0.6890756302521008,Critical,#d32f2f,22,CO Open Data + CO Demography Office,2025-11-07
+8075,Logan,2029,3-5,558,147,0.7,391,244,0.6240409207161125,Critical,#d32f2f,22,CO Open Data + CO Demography Office,2025-11-07
 8077,Mesa,2025,0-2,4927,737,0.6,2956,2219,0.7506765899864682,Critical,#d32f2f,117,CO Open Data + CO Demography Office,2025-11-07
 8077,Mesa,2025,0-5,9854,1716,0.65,6405,4689,0.7320843091334894,Critical,#d32f2f,117,CO Open Data + CO Demography Office,2025-11-07
 8077,Mesa,2025,3-5,4927,979,0.7,3449,2470,0.7161496085821978,Critical,#d32f2f,117,CO Open Data + CO Demography Office,2025-11-07
-8077,Mesa,2029,0-2,5102,737,0.6,3061,2324,0.7592290101274094,Critical,#d32f2f,117,CO Open Data + CO Demography Office,2025-11-07
-8077,Mesa,2029,0-5,10204,1716,0.65,6633,4917,0.7412935323383084,Critical,#d32f2f,117,CO Open Data + CO Demography Office,2025-11-07
-8077,Mesa,2029,3-5,5102,979,0.7,3571,2592,0.7258471016521982,Critical,#d32f2f,117,CO Open Data + CO Demography Office,2025-11-07
+8077,Mesa,2029,0-2,4601,737,0.6,2761,2024,0.7330677290836654,Critical,#d32f2f,117,CO Open Data + CO Demography Office,2025-11-07
+8077,Mesa,2029,0-5,9302,1716,0.65,6046,4330,0.7161759841217333,Critical,#d32f2f,117,CO Open Data + CO Demography Office,2025-11-07
+8077,Mesa,2029,3-5,4701,979,0.7,3291,2312,0.7025220297781829,Critical,#d32f2f,117,CO Open Data + CO Demography Office,2025-11-07
 8079,Mineral,2025,0-2,19,10,0.6,11,1,0.09090909090909091,Low,#9ccc65,2,CO Open Data + CO Demography Office,2025-11-07
 8079,Mineral,2025,0-5,37,10,0.65,24,14,0.5833333333333334,Critical,#d32f2f,2,CO Open Data + CO Demography Office,2025-11-07
 8079,Mineral,2025,3-5,18,0,0.7,13,13,1.0,Critical,#d32f2f,2,CO Open Data + CO Demography Office,2025-11-07
-8079,Mineral,2029,0-2,20,10,0.6,12,2,0.16666666666666666,Moderate,#fbc02d,2,CO Open Data + CO Demography Office,2025-11-07
-8079,Mineral,2029,0-5,39,10,0.65,25,15,0.6,Critical,#d32f2f,2,CO Open Data + CO Demography Office,2025-11-07
-8079,Mineral,2029,3-5,19,0,0.7,13,13,1.0,Critical,#d32f2f,2,CO Open Data + CO Demography Office,2025-11-07
+8079,Mineral,2029,0-2,22,10,0.6,13,3,0.23076923076923078,Significant,#f57c00,2,CO Open Data + CO Demography Office,2025-11-07
+8079,Mineral,2029,0-5,49,10,0.65,32,22,0.6875,Critical,#d32f2f,2,CO Open Data + CO Demography Office,2025-11-07
+8079,Mineral,2029,3-5,27,0,0.7,19,19,1.0,Critical,#d32f2f,2,CO Open Data + CO Demography Office,2025-11-07
 8081,Moffat,2025,0-2,483,48,0.6,290,242,0.8344827586206897,Critical,#d32f2f,7,CO Open Data + CO Demography Office,2025-11-07
 8081,Moffat,2025,0-5,966,262,0.65,628,366,0.5828025477707006,Critical,#d32f2f,7,CO Open Data + CO Demography Office,2025-11-07
 8081,Moffat,2025,3-5,483,214,0.7,338,124,0.3668639053254438,Critical,#d32f2f,7,CO Open Data + CO Demography Office,2025-11-07
-8081,Moffat,2029,0-2,500,48,0.6,300,252,0.84,Critical,#d32f2f,7,CO Open Data + CO Demography Office,2025-11-07
-8081,Moffat,2029,0-5,1000,262,0.65,650,388,0.5969230769230769,Critical,#d32f2f,7,CO Open Data + CO Demography Office,2025-11-07
-8081,Moffat,2029,3-5,500,214,0.7,350,136,0.38857142857142857,Critical,#d32f2f,7,CO Open Data + CO Demography Office,2025-11-07
+8081,Moffat,2029,0-2,430,48,0.6,258,210,0.813953488372093,Critical,#d32f2f,7,CO Open Data + CO Demography Office,2025-11-07
+8081,Moffat,2029,0-5,870,262,0.65,566,304,0.5371024734982333,Critical,#d32f2f,7,CO Open Data + CO Demography Office,2025-11-07
+8081,Moffat,2029,3-5,440,214,0.7,308,94,0.3051948051948052,Critical,#d32f2f,7,CO Open Data + CO Demography Office,2025-11-07
 8083,Montezuma,2025,0-2,737,95,0.6,442,347,0.7850678733031674,Critical,#d32f2f,17,CO Open Data + CO Demography Office,2025-11-07
 8083,Montezuma,2025,0-5,1475,229,0.65,959,730,0.7612095933263816,Critical,#d32f2f,17,CO Open Data + CO Demography Office,2025-11-07
 8083,Montezuma,2025,3-5,738,134,0.7,517,383,0.7408123791102514,Critical,#d32f2f,17,CO Open Data + CO Demography Office,2025-11-07
-8083,Montezuma,2029,0-2,763,95,0.6,458,363,0.7925764192139738,Critical,#d32f2f,17,CO Open Data + CO Demography Office,2025-11-07
-8083,Montezuma,2029,0-5,1527,229,0.65,993,764,0.7693856998992951,Critical,#d32f2f,17,CO Open Data + CO Demography Office,2025-11-07
-8083,Montezuma,2029,3-5,764,134,0.7,535,401,0.7495327102803738,Critical,#d32f2f,17,CO Open Data + CO Demography Office,2025-11-07
+8083,Montezuma,2029,0-2,651,95,0.6,391,296,0.7570332480818415,Critical,#d32f2f,17,CO Open Data + CO Demography Office,2025-11-07
+8083,Montezuma,2029,0-5,1361,229,0.65,885,656,0.7412429378531074,Critical,#d32f2f,17,CO Open Data + CO Demography Office,2025-11-07
+8083,Montezuma,2029,3-5,710,134,0.7,497,363,0.7303822937625755,Critical,#d32f2f,17,CO Open Data + CO Demography Office,2025-11-07
 8085,Montrose,2025,0-2,1240,163,0.6,744,581,0.7809139784946236,Critical,#d32f2f,22,CO Open Data + CO Demography Office,2025-11-07
 8085,Montrose,2025,0-5,2480,537,0.65,1612,1075,0.6668734491315137,Critical,#d32f2f,22,CO Open Data + CO Demography Office,2025-11-07
 8085,Montrose,2025,3-5,1240,374,0.7,868,494,0.5691244239631337,Critical,#d32f2f,22,CO Open Data + CO Demography Office,2025-11-07
-8085,Montrose,2029,0-2,1284,163,0.6,770,607,0.7883116883116883,Critical,#d32f2f,22,CO Open Data + CO Demography Office,2025-11-07
-8085,Montrose,2029,0-5,2568,537,0.65,1669,1132,0.6782504493708807,Critical,#d32f2f,22,CO Open Data + CO Demography Office,2025-11-07
-8085,Montrose,2029,3-5,1284,374,0.7,899,525,0.5839822024471635,Critical,#d32f2f,22,CO Open Data + CO Demography Office,2025-11-07
+8085,Montrose,2029,0-2,1281,163,0.6,769,606,0.788036410923277,Critical,#d32f2f,22,CO Open Data + CO Demography Office,2025-11-07
+8085,Montrose,2029,0-5,2615,537,0.65,1700,1163,0.6841176470588235,Critical,#d32f2f,22,CO Open Data + CO Demography Office,2025-11-07
+8085,Montrose,2029,3-5,1334,374,0.7,934,560,0.5995717344753747,Critical,#d32f2f,22,CO Open Data + CO Demography Office,2025-11-07
 8087,Morgan,2025,0-2,1239,201,0.6,743,542,0.7294751009421265,Critical,#d32f2f,25,CO Open Data + CO Demography Office,2025-11-07
 8087,Morgan,2025,0-5,2478,344,0.65,1611,1267,0.7864680322780881,Critical,#d32f2f,25,CO Open Data + CO Demography Office,2025-11-07
 8087,Morgan,2025,3-5,1239,143,0.7,867,724,0.8350634371395617,Critical,#d32f2f,25,CO Open Data + CO Demography Office,2025-11-07
-8087,Morgan,2029,0-2,1283,201,0.6,770,569,0.7389610389610389,Critical,#d32f2f,25,CO Open Data + CO Demography Office,2025-11-07
-8087,Morgan,2029,0-5,2566,344,0.65,1668,1324,0.7937649880095923,Critical,#d32f2f,25,CO Open Data + CO Demography Office,2025-11-07
-8087,Morgan,2029,3-5,1283,143,0.7,898,755,0.8407572383073497,Critical,#d32f2f,25,CO Open Data + CO Demography Office,2025-11-07
+8087,Morgan,2029,0-2,1247,201,0.6,748,547,0.7312834224598931,Critical,#d32f2f,25,CO Open Data + CO Demography Office,2025-11-07
+8087,Morgan,2029,0-5,2518,344,0.65,1637,1293,0.7898594990836897,Critical,#d32f2f,25,CO Open Data + CO Demography Office,2025-11-07
+8087,Morgan,2029,3-5,1271,143,0.7,890,747,0.8393258426966292,Critical,#d32f2f,25,CO Open Data + CO Demography Office,2025-11-07
 8089,Otero,2025,0-2,632,76,0.6,379,303,0.7994722955145118,Critical,#d32f2f,13,CO Open Data + CO Demography Office,2025-11-07
 8089,Otero,2025,0-5,1264,398,0.65,822,424,0.5158150851581509,Critical,#d32f2f,13,CO Open Data + CO Demography Office,2025-11-07
 8089,Otero,2025,3-5,632,322,0.7,442,120,0.27149321266968324,Significant,#f57c00,13,CO Open Data + CO Demography Office,2025-11-07
-8089,Otero,2029,0-2,654,76,0.6,392,316,0.8061224489795918,Critical,#d32f2f,13,CO Open Data + CO Demography Office,2025-11-07
-8089,Otero,2029,0-5,1308,398,0.65,850,452,0.5317647058823529,Critical,#d32f2f,13,CO Open Data + CO Demography Office,2025-11-07
-8089,Otero,2029,3-5,654,322,0.7,458,136,0.29694323144104806,Significant,#f57c00,13,CO Open Data + CO Demography Office,2025-11-07
+8089,Otero,2029,0-2,577,76,0.6,346,270,0.7803468208092486,Critical,#d32f2f,13,CO Open Data + CO Demography Office,2025-11-07
+8089,Otero,2029,0-5,1202,398,0.65,781,383,0.49039692701664533,Critical,#d32f2f,13,CO Open Data + CO Demography Office,2025-11-07
+8089,Otero,2029,3-5,625,322,0.7,438,116,0.2648401826484018,Significant,#f57c00,13,CO Open Data + CO Demography Office,2025-11-07
 8091,Ouray,2025,0-2,87,10,0.6,52,42,0.8076923076923077,Critical,#d32f2f,6,CO Open Data + CO Demography Office,2025-11-07
 8091,Ouray,2025,0-5,174,75,0.65,113,38,0.336283185840708,Critical,#d32f2f,6,CO Open Data + CO Demography Office,2025-11-07
 8091,Ouray,2025,3-5,87,65,0.7,61,-4,-0.06557377049180328,Adequate,#66bb6a,6,CO Open Data + CO Demography Office,2025-11-07
-8091,Ouray,2029,0-2,90,10,0.6,54,44,0.8148148148148148,Critical,#d32f2f,6,CO Open Data + CO Demography Office,2025-11-07
-8091,Ouray,2029,0-5,180,75,0.65,117,42,0.358974358974359,Critical,#d32f2f,6,CO Open Data + CO Demography Office,2025-11-07
-8091,Ouray,2029,3-5,90,65,0.7,63,-2,-0.031746031746031744,Adequate,#66bb6a,6,CO Open Data + CO Demography Office,2025-11-07
+8091,Ouray,2029,0-2,95,10,0.6,57,47,0.8245614035087719,Critical,#d32f2f,6,CO Open Data + CO Demography Office,2025-11-07
+8091,Ouray,2029,0-5,203,75,0.65,132,57,0.4318181818181818,Critical,#d32f2f,6,CO Open Data + CO Demography Office,2025-11-07
+8091,Ouray,2029,3-5,108,65,0.7,76,11,0.14473684210526316,Moderate,#fbc02d,6,CO Open Data + CO Demography Office,2025-11-07
 8093,Park,2025,0-2,359,32,0.6,215,183,0.8511627906976744,Critical,#d32f2f,16,CO Open Data + CO Demography Office,2025-11-07
 8093,Park,2025,0-5,718,72,0.65,467,395,0.8458244111349036,Critical,#d32f2f,16,CO Open Data + CO Demography Office,2025-11-07
 8093,Park,2025,3-5,359,40,0.7,251,211,0.8406374501992032,Critical,#d32f2f,16,CO Open Data + CO Demography Office,2025-11-07
-8093,Park,2029,0-2,372,32,0.6,223,191,0.8565022421524664,Critical,#d32f2f,16,CO Open Data + CO Demography Office,2025-11-07
-8093,Park,2029,0-5,744,72,0.65,484,412,0.8512396694214877,Critical,#d32f2f,16,CO Open Data + CO Demography Office,2025-11-07
-8093,Park,2029,3-5,372,40,0.7,260,220,0.8461538461538461,Critical,#d32f2f,16,CO Open Data + CO Demography Office,2025-11-07
+8093,Park,2029,0-2,448,32,0.6,269,237,0.8810408921933085,Critical,#d32f2f,16,CO Open Data + CO Demography Office,2025-11-07
+8093,Park,2029,0-5,965,72,0.65,627,555,0.8851674641148325,Critical,#d32f2f,16,CO Open Data + CO Demography Office,2025-11-07
+8093,Park,2029,3-5,517,40,0.7,362,322,0.8895027624309392,Critical,#d32f2f,16,CO Open Data + CO Demography Office,2025-11-07
 8095,Phillips,2025,0-2,202,34,0.6,121,87,0.71900826446281,Critical,#d32f2f,7,CO Open Data + CO Demography Office,2025-11-07
 8095,Phillips,2025,0-5,403,57,0.65,262,205,0.7824427480916031,Critical,#d32f2f,7,CO Open Data + CO Demography Office,2025-11-07
 8095,Phillips,2025,3-5,201,23,0.7,141,118,0.8368794326241135,Critical,#d32f2f,7,CO Open Data + CO Demography Office,2025-11-07
-8095,Phillips,2029,0-2,209,34,0.6,125,91,0.728,Critical,#d32f2f,7,CO Open Data + CO Demography Office,2025-11-07
-8095,Phillips,2029,0-5,417,57,0.65,271,214,0.7896678966789668,Critical,#d32f2f,7,CO Open Data + CO Demography Office,2025-11-07
-8095,Phillips,2029,3-5,208,23,0.7,146,123,0.8424657534246576,Critical,#d32f2f,7,CO Open Data + CO Demography Office,2025-11-07
+8095,Phillips,2029,0-2,152,34,0.6,91,57,0.6263736263736264,Critical,#d32f2f,7,CO Open Data + CO Demography Office,2025-11-07
+8095,Phillips,2029,0-5,315,57,0.65,205,148,0.7219512195121951,Critical,#d32f2f,7,CO Open Data + CO Demography Office,2025-11-07
+8095,Phillips,2029,3-5,163,23,0.7,114,91,0.7982456140350878,Critical,#d32f2f,7,CO Open Data + CO Demography Office,2025-11-07
 8097,Pitkin,2025,0-2,484,223,0.6,290,67,0.23103448275862068,Significant,#f57c00,20,CO Open Data + CO Demography Office,2025-11-07
 8097,Pitkin,2025,0-5,968,255,0.65,629,374,0.5945945945945946,Critical,#d32f2f,20,CO Open Data + CO Demography Office,2025-11-07
 8097,Pitkin,2025,3-5,484,32,0.7,339,307,0.9056047197640118,Critical,#d32f2f,20,CO Open Data + CO Demography Office,2025-11-07
-8097,Pitkin,2029,0-2,501,223,0.6,301,78,0.2591362126245847,Significant,#f57c00,20,CO Open Data + CO Demography Office,2025-11-07
-8097,Pitkin,2029,0-5,1002,255,0.65,651,396,0.6082949308755761,Critical,#d32f2f,20,CO Open Data + CO Demography Office,2025-11-07
-8097,Pitkin,2029,3-5,501,32,0.7,351,319,0.9088319088319088,Critical,#d32f2f,20,CO Open Data + CO Demography Office,2025-11-07
+8097,Pitkin,2029,0-2,318,223,0.6,191,-32,-0.16753926701570682,Adequate,#66bb6a,20,CO Open Data + CO Demography Office,2025-11-07
+8097,Pitkin,2029,0-5,631,255,0.65,410,155,0.3780487804878049,Critical,#d32f2f,20,CO Open Data + CO Demography Office,2025-11-07
+8097,Pitkin,2029,3-5,313,32,0.7,219,187,0.8538812785388128,Critical,#d32f2f,20,CO Open Data + CO Demography Office,2025-11-07
 8099,Prowers,2025,0-2,475,36,0.6,285,249,0.8736842105263158,Critical,#d32f2f,9,CO Open Data + CO Demography Office,2025-11-07
 8099,Prowers,2025,0-5,950,192,0.65,618,426,0.6893203883495146,Critical,#d32f2f,9,CO Open Data + CO Demography Office,2025-11-07
 8099,Prowers,2025,3-5,475,156,0.7,332,176,0.5301204819277109,Critical,#d32f2f,9,CO Open Data + CO Demography Office,2025-11-07
-8099,Prowers,2029,0-2,492,36,0.6,295,259,0.8779661016949153,Critical,#d32f2f,9,CO Open Data + CO Demography Office,2025-11-07
-8099,Prowers,2029,0-5,984,192,0.65,640,448,0.7,Critical,#d32f2f,9,CO Open Data + CO Demography Office,2025-11-07
-8099,Prowers,2029,3-5,492,156,0.7,344,188,0.5465116279069767,Critical,#d32f2f,9,CO Open Data + CO Demography Office,2025-11-07
+8099,Prowers,2029,0-2,405,36,0.6,243,207,0.8518518518518519,Critical,#d32f2f,9,CO Open Data + CO Demography Office,2025-11-07
+8099,Prowers,2029,0-5,842,192,0.65,547,355,0.6489945155393053,Critical,#d32f2f,9,CO Open Data + CO Demography Office,2025-11-07
+8099,Prowers,2029,3-5,437,156,0.7,306,150,0.49019607843137253,Critical,#d32f2f,9,CO Open Data + CO Demography Office,2025-11-07
 8101,Pueblo,2025,0-2,5549,585,0.6,3329,2744,0.8242715530189246,Critical,#d32f2f,127,CO Open Data + CO Demography Office,2025-11-07
 8101,Pueblo,2025,0-5,11099,1861,0.65,7214,5353,0.7420293873024674,Critical,#d32f2f,127,CO Open Data + CO Demography Office,2025-11-07
 8101,Pueblo,2025,3-5,5550,1276,0.7,3885,2609,0.6715572715572715,Critical,#d32f2f,127,CO Open Data + CO Demography Office,2025-11-07
-8101,Pueblo,2029,0-2,5746,585,0.6,3448,2863,0.8303364269141531,Critical,#d32f2f,127,CO Open Data + CO Demography Office,2025-11-07
-8101,Pueblo,2029,0-5,11493,1861,0.65,7470,5609,0.7508701472556895,Critical,#d32f2f,127,CO Open Data + CO Demography Office,2025-11-07
-8101,Pueblo,2029,3-5,5747,1276,0.7,4023,2747,0.6828237633606761,Critical,#d32f2f,127,CO Open Data + CO Demography Office,2025-11-07
+8101,Pueblo,2029,0-2,4924,585,0.6,2954,2369,0.8019634394041977,Critical,#d32f2f,127,CO Open Data + CO Demography Office,2025-11-07
+8101,Pueblo,2029,0-5,10037,1861,0.65,6524,4663,0.7147455548743102,Critical,#d32f2f,127,CO Open Data + CO Demography Office,2025-11-07
+8101,Pueblo,2029,3-5,5113,1276,0.7,3579,2303,0.643475831237776,Critical,#d32f2f,127,CO Open Data + CO Demography Office,2025-11-07
 8103,Rio Blanco,2025,0-2,249,22,0.6,149,127,0.8523489932885906,Critical,#d32f2f,6,CO Open Data + CO Demography Office,2025-11-07
 8103,Rio Blanco,2025,0-5,498,26,0.65,324,298,0.9197530864197531,Critical,#d32f2f,6,CO Open Data + CO Demography Office,2025-11-07
 8103,Rio Blanco,2025,3-5,249,4,0.7,174,170,0.9770114942528736,Critical,#d32f2f,6,CO Open Data + CO Demography Office,2025-11-07
-8103,Rio Blanco,2029,0-2,258,22,0.6,155,133,0.8580645161290322,Critical,#d32f2f,6,CO Open Data + CO Demography Office,2025-11-07
-8103,Rio Blanco,2029,0-5,516,26,0.65,335,309,0.9223880597014925,Critical,#d32f2f,6,CO Open Data + CO Demography Office,2025-11-07
-8103,Rio Blanco,2029,3-5,258,4,0.7,181,177,0.9779005524861878,Critical,#d32f2f,6,CO Open Data + CO Demography Office,2025-11-07
+8103,Rio Blanco,2029,0-2,123,22,0.6,74,52,0.7027027027027027,Critical,#d32f2f,6,CO Open Data + CO Demography Office,2025-11-07
+8103,Rio Blanco,2029,0-5,258,26,0.65,168,142,0.8452380952380952,Critical,#d32f2f,6,CO Open Data + CO Demography Office,2025-11-07
+8103,Rio Blanco,2029,3-5,135,4,0.7,94,90,0.9574468085106383,Critical,#d32f2f,6,CO Open Data + CO Demography Office,2025-11-07
 8105,Rio Grande,2025,0-2,353,64,0.6,212,148,0.6981132075471698,Critical,#d32f2f,13,CO Open Data + CO Demography Office,2025-11-07
 8105,Rio Grande,2025,0-5,707,194,0.65,460,266,0.5782608695652174,Critical,#d32f2f,13,CO Open Data + CO Demography Office,2025-11-07
 8105,Rio Grande,2025,3-5,354,130,0.7,248,118,0.47580645161290325,Critical,#d32f2f,13,CO Open Data + CO Demography Office,2025-11-07
-8105,Rio Grande,2029,0-2,366,64,0.6,220,156,0.7090909090909091,Critical,#d32f2f,13,CO Open Data + CO Demography Office,2025-11-07
-8105,Rio Grande,2029,0-5,733,194,0.65,476,282,0.592436974789916,Critical,#d32f2f,13,CO Open Data + CO Demography Office,2025-11-07
-8105,Rio Grande,2029,3-5,367,130,0.7,257,127,0.49416342412451364,Critical,#d32f2f,13,CO Open Data + CO Demography Office,2025-11-07
+8105,Rio Grande,2029,0-2,342,64,0.6,205,141,0.6878048780487804,Critical,#d32f2f,13,CO Open Data + CO Demography Office,2025-11-07
+8105,Rio Grande,2029,0-5,717,194,0.65,466,272,0.5836909871244635,Critical,#d32f2f,13,CO Open Data + CO Demography Office,2025-11-07
+8105,Rio Grande,2029,3-5,375,130,0.7,262,132,0.5038167938931297,Critical,#d32f2f,13,CO Open Data + CO Demography Office,2025-11-07
 8107,Routt,2025,0-2,617,132,0.6,370,238,0.6432432432432432,Critical,#d32f2f,34,CO Open Data + CO Demography Office,2025-11-07
 8107,Routt,2025,0-5,1234,284,0.65,802,518,0.6458852867830424,Critical,#d32f2f,34,CO Open Data + CO Demography Office,2025-11-07
 8107,Routt,2025,3-5,617,152,0.7,432,280,0.6481481481481481,Critical,#d32f2f,34,CO Open Data + CO Demography Office,2025-11-07
-8107,Routt,2029,0-2,639,132,0.6,383,251,0.6553524804177546,Critical,#d32f2f,34,CO Open Data + CO Demography Office,2025-11-07
-8107,Routt,2029,0-5,1278,284,0.65,831,547,0.6582430806257521,Critical,#d32f2f,34,CO Open Data + CO Demography Office,2025-11-07
-8107,Routt,2029,3-5,639,152,0.7,447,295,0.6599552572706935,Critical,#d32f2f,34,CO Open Data + CO Demography Office,2025-11-07
+8107,Routt,2029,0-2,656,132,0.6,394,262,0.6649746192893401,Critical,#d32f2f,34,CO Open Data + CO Demography Office,2025-11-07
+8107,Routt,2029,0-5,1299,284,0.65,844,560,0.6635071090047393,Critical,#d32f2f,34,CO Open Data + CO Demography Office,2025-11-07
+8107,Routt,2029,3-5,643,152,0.7,450,298,0.6622222222222223,Critical,#d32f2f,34,CO Open Data + CO Demography Office,2025-11-07
 8109,Saguache,2025,0-2,184,80,0.6,110,30,0.2727272727272727,Significant,#f57c00,5,CO Open Data + CO Demography Office,2025-11-07
 8109,Saguache,2025,0-5,367,102,0.65,239,137,0.5732217573221757,Critical,#d32f2f,5,CO Open Data + CO Demography Office,2025-11-07
 8109,Saguache,2025,3-5,183,22,0.7,128,106,0.828125,Critical,#d32f2f,5,CO Open Data + CO Demography Office,2025-11-07
-8109,Saguache,2029,0-2,191,80,0.6,115,35,0.30434782608695654,Critical,#d32f2f,5,CO Open Data + CO Demography Office,2025-11-07
-8109,Saguache,2029,0-5,381,102,0.65,248,146,0.5887096774193549,Critical,#d32f2f,5,CO Open Data + CO Demography Office,2025-11-07
-8109,Saguache,2029,3-5,190,22,0.7,133,111,0.8345864661654135,Critical,#d32f2f,5,CO Open Data + CO Demography Office,2025-11-07
+8109,Saguache,2029,0-2,193,80,0.6,116,36,0.3103448275862069,Critical,#d32f2f,5,CO Open Data + CO Demography Office,2025-11-07
+8109,Saguache,2029,0-5,398,102,0.65,259,157,0.6061776061776062,Critical,#d32f2f,5,CO Open Data + CO Demography Office,2025-11-07
+8109,Saguache,2029,3-5,205,22,0.7,144,122,0.8472222222222222,Critical,#d32f2f,5,CO Open Data + CO Demography Office,2025-11-07
 8111,San Juan,2025,0-2,10,25,0.6,6,-19,-3.1666666666666665,Adequate,#66bb6a,1,CO Open Data + CO Demography Office,2025-11-07
 8111,San Juan,2025,0-5,19,25,0.65,12,-13,-1.0833333333333333,Adequate,#66bb6a,1,CO Open Data + CO Demography Office,2025-11-07
 8111,San Juan,2025,3-5,9,0,0.7,6,6,1.0,Critical,#d32f2f,1,CO Open Data + CO Demography Office,2025-11-07
-8111,San Juan,2029,0-2,10,25,0.6,6,-19,-3.1666666666666665,Adequate,#66bb6a,1,CO Open Data + CO Demography Office,2025-11-07
-8111,San Juan,2029,0-5,19,25,0.65,12,-13,-1.0833333333333333,Adequate,#66bb6a,1,CO Open Data + CO Demography Office,2025-11-07
-8111,San Juan,2029,3-5,9,0,0.7,6,6,1.0,Critical,#d32f2f,1,CO Open Data + CO Demography Office,2025-11-07
+8111,San Juan,2029,0-2,3,25,0.6,2,-23,-11.5,Adequate,#66bb6a,1,CO Open Data + CO Demography Office,2025-11-07
+8111,San Juan,2029,0-5,6,25,0.65,4,-21,-5.25,Adequate,#66bb6a,1,CO Open Data + CO Demography Office,2025-11-07
+8111,San Juan,2029,3-5,3,0,0.7,2,2,1.0,Critical,#d32f2f,1,CO Open Data + CO Demography Office,2025-11-07
 8113,San Miguel,2025,0-2,137,74,0.6,82,8,0.0975609756097561,Low,#9ccc65,13,CO Open Data + CO Demography Office,2025-11-07
 8113,San Miguel,2025,0-5,275,178,0.65,179,1,0.00558659217877095,Adequate,#66bb6a,13,CO Open Data + CO Demography Office,2025-11-07
 8113,San Miguel,2025,3-5,138,104,0.7,97,-7,-0.07216494845360824,Adequate,#66bb6a,13,CO Open Data + CO Demography Office,2025-11-07
-8113,San Miguel,2029,0-2,142,74,0.6,85,11,0.12941176470588237,Moderate,#fbc02d,13,CO Open Data + CO Demography Office,2025-11-07
-8113,San Miguel,2029,0-5,285,178,0.65,185,7,0.03783783783783784,Adequate,#66bb6a,13,CO Open Data + CO Demography Office,2025-11-07
-8113,San Miguel,2029,3-5,143,104,0.7,100,-4,-0.04,Adequate,#66bb6a,13,CO Open Data + CO Demography Office,2025-11-07
+8113,San Miguel,2029,0-2,171,74,0.6,103,29,0.2815533980582524,Significant,#f57c00,13,CO Open Data + CO Demography Office,2025-11-07
+8113,San Miguel,2029,0-5,327,178,0.65,213,35,0.1643192488262911,Moderate,#fbc02d,13,CO Open Data + CO Demography Office,2025-11-07
+8113,San Miguel,2029,3-5,156,104,0.7,109,5,0.045871559633027525,Adequate,#66bb6a,13,CO Open Data + CO Demography Office,2025-11-07
 8115,Sedgwick,2025,0-2,114,5,0.6,68,63,0.9264705882352942,Critical,#d32f2f,3,CO Open Data + CO Demography Office,2025-11-07
 8115,Sedgwick,2025,0-5,228,12,0.65,148,136,0.918918918918919,Critical,#d32f2f,3,CO Open Data + CO Demography Office,2025-11-07
 8115,Sedgwick,2025,3-5,114,7,0.7,80,73,0.9125,Critical,#d32f2f,3,CO Open Data + CO Demography Office,2025-11-07
-8115,Sedgwick,2029,0-2,118,5,0.6,71,66,0.9295774647887324,Critical,#d32f2f,3,CO Open Data + CO Demography Office,2025-11-07
-8115,Sedgwick,2029,0-5,236,12,0.65,153,141,0.9215686274509803,Critical,#d32f2f,3,CO Open Data + CO Demography Office,2025-11-07
-8115,Sedgwick,2029,3-5,118,7,0.7,83,76,0.9156626506024096,Critical,#d32f2f,3,CO Open Data + CO Demography Office,2025-11-07
+8115,Sedgwick,2029,0-2,72,5,0.6,43,38,0.8837209302325582,Critical,#d32f2f,3,CO Open Data + CO Demography Office,2025-11-07
+8115,Sedgwick,2029,0-5,151,12,0.65,98,86,0.8775510204081632,Critical,#d32f2f,3,CO Open Data + CO Demography Office,2025-11-07
+8115,Sedgwick,2029,3-5,79,7,0.7,55,48,0.8727272727272727,Critical,#d32f2f,3,CO Open Data + CO Demography Office,2025-11-07
 8117,Summit,2025,0-2,616,318,0.6,370,52,0.14054054054054055,Moderate,#fbc02d,39,CO Open Data + CO Demography Office,2025-11-07
 8117,Summit,2025,0-5,1231,528,0.65,800,272,0.34,Critical,#d32f2f,39,CO Open Data + CO Demography Office,2025-11-07
 8117,Summit,2025,3-5,615,210,0.7,430,220,0.5116279069767442,Critical,#d32f2f,39,CO Open Data + CO Demography Office,2025-11-07
-8117,Summit,2029,0-2,638,318,0.6,383,65,0.16971279373368145,Moderate,#fbc02d,39,CO Open Data + CO Demography Office,2025-11-07
-8117,Summit,2029,0-5,1275,528,0.65,829,301,0.36308805790108567,Critical,#d32f2f,39,CO Open Data + CO Demography Office,2025-11-07
-8117,Summit,2029,3-5,637,210,0.7,446,236,0.5291479820627802,Critical,#d32f2f,39,CO Open Data + CO Demography Office,2025-11-07
+8117,Summit,2029,0-2,788,318,0.6,473,155,0.3276955602536998,Critical,#d32f2f,39,CO Open Data + CO Demography Office,2025-11-07
+8117,Summit,2029,0-5,1574,528,0.65,1023,495,0.4838709677419355,Critical,#d32f2f,39,CO Open Data + CO Demography Office,2025-11-07
+8117,Summit,2029,3-5,786,210,0.7,550,340,0.6181818181818182,Critical,#d32f2f,39,CO Open Data + CO Demography Office,2025-11-07
 8119,Teller,2025,0-2,563,109,0.6,338,229,0.6775147928994083,Critical,#d32f2f,28,CO Open Data + CO Demography Office,2025-11-07
 8119,Teller,2025,0-5,1126,298,0.65,732,434,0.592896174863388,Critical,#d32f2f,28,CO Open Data + CO Demography Office,2025-11-07
 8119,Teller,2025,3-5,563,189,0.7,394,205,0.5203045685279187,Critical,#d32f2f,28,CO Open Data + CO Demography Office,2025-11-07
-8119,Teller,2029,0-2,583,109,0.6,350,241,0.6885714285714286,Critical,#d32f2f,28,CO Open Data + CO Demography Office,2025-11-07
-8119,Teller,2029,0-5,1166,298,0.65,758,460,0.6068601583113457,Critical,#d32f2f,28,CO Open Data + CO Demography Office,2025-11-07
-8119,Teller,2029,3-5,583,189,0.7,408,219,0.5367647058823529,Critical,#d32f2f,28,CO Open Data + CO Demography Office,2025-11-07
+8119,Teller,2029,0-2,576,109,0.6,346,237,0.684971098265896,Critical,#d32f2f,28,CO Open Data + CO Demography Office,2025-11-07
+8119,Teller,2029,0-5,1177,298,0.65,765,467,0.6104575163398693,Critical,#d32f2f,28,CO Open Data + CO Demography Office,2025-11-07
+8119,Teller,2029,3-5,601,189,0.7,421,232,0.5510688836104513,Critical,#d32f2f,28,CO Open Data + CO Demography Office,2025-11-07
 8121,Washington,2025,0-2,130,42,0.6,78,36,0.46153846153846156,Critical,#d32f2f,9,CO Open Data + CO Demography Office,2025-11-07
 8121,Washington,2025,0-5,260,56,0.65,169,113,0.6686390532544378,Critical,#d32f2f,9,CO Open Data + CO Demography Office,2025-11-07
 8121,Washington,2025,3-5,130,14,0.7,91,77,0.8461538461538461,Critical,#d32f2f,9,CO Open Data + CO Demography Office,2025-11-07
-8121,Washington,2029,0-2,135,42,0.6,81,39,0.48148148148148145,Critical,#d32f2f,9,CO Open Data + CO Demography Office,2025-11-07
-8121,Washington,2029,0-5,270,56,0.65,176,120,0.6818181818181818,Critical,#d32f2f,9,CO Open Data + CO Demography Office,2025-11-07
-8121,Washington,2029,3-5,135,14,0.7,94,80,0.851063829787234,Critical,#d32f2f,9,CO Open Data + CO Demography Office,2025-11-07
+8121,Washington,2029,0-2,181,42,0.6,109,67,0.6146788990825688,Critical,#d32f2f,9,CO Open Data + CO Demography Office,2025-11-07
+8121,Washington,2029,0-5,381,56,0.65,248,192,0.7741935483870968,Critical,#d32f2f,9,CO Open Data + CO Demography Office,2025-11-07
+8121,Washington,2029,3-5,200,14,0.7,140,126,0.9,Critical,#d32f2f,9,CO Open Data + CO Demography Office,2025-11-07
 8123,Weld,2025,0-2,13656,1711,0.6,8194,6483,0.7911886746399804,Critical,#d32f2f,307,CO Open Data + CO Demography Office,2025-11-07
 8123,Weld,2025,0-5,27312,4868,0.65,17753,12885,0.725792823748099,Critical,#d32f2f,307,CO Open Data + CO Demography Office,2025-11-07
 8123,Weld,2025,3-5,13656,3157,0.7,9559,6402,0.669735327963176,Critical,#d32f2f,307,CO Open Data + CO Demography Office,2025-11-07
-8123,Weld,2029,0-2,14141,1711,0.6,8485,6774,0.7983500294637595,Critical,#d32f2f,307,CO Open Data + CO Demography Office,2025-11-07
-8123,Weld,2029,0-5,28282,4868,0.65,18383,13515,0.73519012130773,Critical,#d32f2f,307,CO Open Data + CO Demography Office,2025-11-07
-8123,Weld,2029,3-5,14141,3157,0.7,9899,6742,0.6810788968582685,Critical,#d32f2f,307,CO Open Data + CO Demography Office,2025-11-07
+8123,Weld,2029,0-2,16513,1711,0.6,9908,8197,0.8273112636253532,Critical,#d32f2f,307,CO Open Data + CO Demography Office,2025-11-07
+8123,Weld,2029,0-5,33093,4868,0.65,21510,16642,0.7736866573686657,Critical,#d32f2f,307,CO Open Data + CO Demography Office,2025-11-07
+8123,Weld,2029,3-5,16580,3157,0.7,11606,8449,0.7279855247285887,Critical,#d32f2f,307,CO Open Data + CO Demography Office,2025-11-07
 8125,Yuma,2025,0-2,410,71,0.6,246,175,0.7113821138211383,Critical,#d32f2f,13,CO Open Data + CO Demography Office,2025-11-07
 8125,Yuma,2025,0-5,821,208,0.65,534,326,0.6104868913857678,Critical,#d32f2f,13,CO Open Data + CO Demography Office,2025-11-07
 8125,Yuma,2025,3-5,411,137,0.7,288,151,0.5243055555555556,Critical,#d32f2f,13,CO Open Data + CO Demography Office,2025-11-07
-8125,Yuma,2029,0-2,425,71,0.6,255,184,0.7215686274509804,Critical,#d32f2f,13,CO Open Data + CO Demography Office,2025-11-07
-8125,Yuma,2029,0-5,851,208,0.65,553,345,0.6238698010849909,Critical,#d32f2f,13,CO Open Data + CO Demography Office,2025-11-07
-8125,Yuma,2029,3-5,426,137,0.7,298,161,0.540268456375839,Critical,#d32f2f,13,CO Open Data + CO Demography Office,2025-11-07
+8125,Yuma,2029,0-2,398,71,0.6,239,168,0.702928870292887,Critical,#d32f2f,13,CO Open Data + CO Demography Office,2025-11-07
+8125,Yuma,2029,0-5,816,208,0.65,530,322,0.6075471698113207,Critical,#d32f2f,13,CO Open Data + CO Demography Office,2025-11-07
+8125,Yuma,2029,3-5,418,137,0.7,293,156,0.5324232081911263,Critical,#d32f2f,13,CO Open Data + CO Demography Office,2025-11-07
