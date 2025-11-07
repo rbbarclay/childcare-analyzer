@@ -220,8 +220,12 @@ def main():
         - **Geographic Level**: County
 
         ### Population Forecasts
-        - **Method**: 0.5% annual growth projection from 2025 to 2029
-        - **Assumption**: Conservative estimate based on Colorado demographic trends
+        - **Source**: Colorado Department of Local Affairs (DOLA) - State Demography Office
+        - **Dataset**: Population Projections in Colorado (q5vp-adf3)
+        - **Coverage**: County-level projections from 1990 to 2050
+        - **Method**: Official state demographic projections by individual age
+        - **2029 Forecast**: 388,869 children ages 0-5 (all 64 counties)
+        - **Link**: [data.colorado.gov](https://data.colorado.gov/Demographics/Population-Projections-in-Colorado/q5vp-adf3)
         - **Note**: Capacity is assumed constant at 2025 levels for forecast scenarios
 
         ### Geographic Boundaries
